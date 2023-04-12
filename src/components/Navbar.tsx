@@ -52,7 +52,7 @@ const Navbar = () => {
 							top: "0",
 						}}
 						className={` 
-						${open ? "left-0" : "left-back"} `}>
+						${open ? "left-0" : "left-back"} x`}>
 						<div
 							onClick={onclick}
 							style={{ position: "absolute", top: "18px", right: "8px" }}>

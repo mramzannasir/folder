@@ -100,9 +100,7 @@ h1 {
 .sidebar-inner {
 	padding: 0.8rem;
 }
-.a {
-	z-index: 1;
-}
+
 
 .Head {
 	color: #1c3238;
@@ -120,6 +118,10 @@ h1 {
 .add {
 	margin-right: 3rem;
 	
+	
+}
+.x{
+	z-index: 1;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
