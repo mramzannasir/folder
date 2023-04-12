@@ -65,6 +65,8 @@ const Sidebar = () => {
 						position: "relative",
 						transition: "all .5s",
 						cursor: "pointer",
+						color: "white",
+						background: "rgb(1, 175, 238)"
 					}}
 					className="Sbox">
 					{dots === 1 && (
