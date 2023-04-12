@@ -134,11 +134,7 @@ h1 {
 		flex-direction: column;
 		padding: 2rem 1.8rem 0rem 1.8rem;
 	}
-	.sidebar {
-		width: 20%;
-		display: block;
-		padding-top: 2rem;
-	}
+	
 }
 
 /* Styles for screens wider than 1024px */
@@ -150,7 +146,7 @@ h1 {
 		display: none;
 	}
 	.page-side {
-		width: 80%;
+		width: 77%;
 		display: flex;
 		flex-direction: column;
 	}
@@ -165,6 +161,11 @@ h1 {
 	}
 	.add{
 		display: block;
+	}
+	.sidebar {
+		width: 23%;
+		display: block;
+		padding-top: 2rem;
 	}
 }
 /* Styles for screens wider than 1440px */
