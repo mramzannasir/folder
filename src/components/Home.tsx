@@ -132,6 +132,7 @@ const Home = () => {
 									transition: "all .5s",
 									cursor: "pointer",
 									background: `${pages == 1 ? "rgb(1, 175, 238)" : "white"}`,
+									color: `${pages == 1 ? "white" : "black"}`,
 								}}
 								className="Sbox">
 								{dots === 1 && (
@@ -139,26 +140,27 @@ const Home = () => {
 										initial={{ opacity: 0, scale: 0.9 }}
 										animate={{ opacity: 1, scale: 1 }}
 										exit={{ opacity: 0 }}
-										transition={{ duration: .5 }}
+										transition={{ duration: 0.5 }}
 										style={{
 											position: "absolute",
 											top: ".2rem",
 											right: "3rem",
 											width: "8rem",
-											height: "2rme",
+											height: "3rem",
 											display: "flex",
 											flexDirection: "column",
 											justifyContent: "center",
+											gap: ".5rem",
 											alignItems: "center",
 											background: "white",
-											borderRadius: "1rem",
-											
+											borderRadius: ".3rem",
 										}}
 										className="shad">
 										<h6
 											style={{
 												fontSize: "1rem",
 												background: "white",
+												fontWeight: "500",
 												color: "black",
 											}}>
 											Edit
@@ -168,6 +170,7 @@ const Home = () => {
 											style={{
 												fontSize: "1rem",
 												background: "white",
+												fontWeight: "500",
 												color: "black",
 											}}>
 											Delete
@@ -206,27 +209,35 @@ const Home = () => {
 									transition: "all .5s",
 									cursor: "pointer",
 									background: `${pages == 2 ? "rgb(1, 175, 238)" : "white"}`,
+									color: `${pages == 2 ? "white" : "black"}`,
 								}}
 								className="Sbox">
 								{dots === 2 && (
-									<div
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
 										style={{
 											position: "absolute",
-											top: "1rem",
+											top: ".2rem",
 											right: "3rem",
 											width: "8rem",
-											height: "1.5rme",
+											height: "3rem",
 											display: "flex",
 											flexDirection: "column",
 											justifyContent: "center",
+											gap: ".5rem",
 											alignItems: "center",
 											background: "white",
-											borderRadius: ".5rem",
-										}}>
+											borderRadius: ".3rem",
+										}}
+										className="shad">
 										<h6
 											style={{
 												fontSize: "1rem",
 												background: "white",
+												fontWeight: "500",
 												color: "black",
 											}}>
 											Edit
@@ -236,11 +247,12 @@ const Home = () => {
 											style={{
 												fontSize: "1rem",
 												background: "white",
+												fontWeight: "500",
 												color: "black",
 											}}>
 											Delete
 										</h6>
-									</div>
+									</motion.div>
 								)}
 								<div
 									onClick={second}
@@ -274,27 +286,35 @@ const Home = () => {
 									transition: "all .5s",
 									cursor: "pointer",
 									background: `${pages == 3 ? "rgb(1, 175, 238)" : "white"}`,
+									color: `${pages == 3 ? "white" : "black"}`,
 								}}
 								className="Sbox">
 								{dots === 3 && (
-									<div
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
 										style={{
 											position: "absolute",
-											top: "1rem",
+											top: ".2rem",
 											right: "3rem",
 											width: "8rem",
-											height: "1.5rme",
+											height: "3rem",
 											display: "flex",
 											flexDirection: "column",
 											justifyContent: "center",
+											gap: ".5rem",
 											alignItems: "center",
 											background: "white",
-											borderRadius: ".5rem",
-										}}>
+											borderRadius: ".3rem",
+										}}
+										className="shad">
 										<h6
 											style={{
 												fontSize: "1rem",
 												background: "white",
+												fontWeight: "500",
 												color: "black",
 											}}>
 											Edit
@@ -304,11 +324,12 @@ const Home = () => {
 											style={{
 												fontSize: "1rem",
 												background: "white",
+												fontWeight: "500",
 												color: "black",
 											}}>
 											Delete
 										</h6>
-									</div>
+									</motion.div>
 								)}
 								<div
 									onClick={third}
@@ -342,27 +363,35 @@ const Home = () => {
 									transition: "all .5s",
 									cursor: "pointer",
 									background: `${pages == 4 ? "rgb(1, 175, 238)" : "white"}`,
+									color: `${pages == 4 ? "white" : "black"}`,
 								}}
 								className="Sbox">
 								{dots === 4 && (
-									<div
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
 										style={{
 											position: "absolute",
-											top: "1rem",
+											top: ".2rem",
 											right: "3rem",
 											width: "8rem",
-											height: "1.5rme",
+											height: "3rem",
 											display: "flex",
 											flexDirection: "column",
 											justifyContent: "center",
+											gap: ".5rem",
 											alignItems: "center",
 											background: "white",
-											borderRadius: ".5rem",
-										}}>
+											borderRadius: ".3rem",
+										}}
+										className="shad">
 										<h6
 											style={{
 												fontSize: "1rem",
 												background: "white",
+												fontWeight: "500",
 												color: "black",
 											}}>
 											Edit
@@ -372,11 +401,12 @@ const Home = () => {
 											style={{
 												fontSize: "1rem",
 												background: "white",
+												fontWeight: "500",
 												color: "black",
 											}}>
 											Delete
 										</h6>
-									</div>
+									</motion.div>
 								)}
 								<div
 									onClick={four}
@@ -410,27 +440,35 @@ const Home = () => {
 									transition: "all .5s",
 									cursor: "pointer",
 									background: `${pages == 5 ? "rgb(1, 175, 238)" : "white"}`,
+									color: `${pages == 5 ? "white" : "black"}`,
 								}}
 								className="Sbox">
 								{dots === 5 && (
-									<div
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
 										style={{
 											position: "absolute",
-											top: "1rem",
+											top: ".2rem",
 											right: "3rem",
 											width: "8rem",
-											height: "1.5rme",
+											height: "3rem",
 											display: "flex",
 											flexDirection: "column",
 											justifyContent: "center",
+											gap: ".5rem",
 											alignItems: "center",
 											background: "white",
-											borderRadius: ".5rem",
-										}}>
+											borderRadius: ".3rem",
+										}}
+										className="shad">
 										<h6
 											style={{
 												fontSize: "1rem",
 												background: "white",
+												fontWeight: "500",
 												color: "black",
 											}}>
 											Edit
@@ -440,11 +478,12 @@ const Home = () => {
 											style={{
 												fontSize: "1rem",
 												background: "white",
+												fontWeight: "500",
 												color: "black",
 											}}>
 											Delete
 										</h6>
-									</div>
+									</motion.div>
 								)}
 								<div
 									onClick={five}
@@ -478,27 +517,35 @@ const Home = () => {
 									transition: "all .5s",
 									cursor: "pointer",
 									background: `${pages == 6 ? "rgb(1, 175, 238)" : "white"}`,
+									color: `${pages == 6 ? "white" : "black"}`,
 								}}
 								className="Sbox">
 								{dots === 6 && (
-									<div
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
 										style={{
 											position: "absolute",
-											top: "1rem",
+											top: ".2rem",
 											right: "3rem",
 											width: "8rem",
-											height: "1.5rme",
+											height: "3rem",
 											display: "flex",
 											flexDirection: "column",
 											justifyContent: "center",
+											gap: ".5rem",
 											alignItems: "center",
 											background: "white",
-											borderRadius: ".5rem",
-										}}>
+											borderRadius: ".3rem",
+										}}
+										className="shad">
 										<h6
 											style={{
 												fontSize: "1rem",
 												background: "white",
+												fontWeight: "500",
 												color: "black",
 											}}>
 											Edit
@@ -508,11 +555,12 @@ const Home = () => {
 											style={{
 												fontSize: "1rem",
 												background: "white",
+												fontWeight: "500",
 												color: "black",
 											}}>
 											Delete
 										</h6>
-									</div>
+									</motion.div>
 								)}
 								<div
 									onClick={six}

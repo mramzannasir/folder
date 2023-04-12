@@ -113,24 +113,31 @@ const Folder_05 = () => {
 					className="boxP">
 					<div style={{}} className="box">
 						{dots === 1 && (
-							<div
+							<motion.div
+								initial={{ opacity: 0, scale: 0.9 }}
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.5 }}
 								style={{
 									position: "absolute",
-									top: "1rem",
+									top: ".2rem",
 									right: "3rem",
 									width: "8rem",
-									height: "1.5rme",
+									height: "3rem",
 									display: "flex",
 									flexDirection: "column",
 									justifyContent: "center",
+									gap: ".5rem",
 									alignItems: "center",
 									background: "white",
-									borderRadius: ".5rem",
-								}}>
+									borderRadius: ".3rem",
+								}}
+								className="shad">
 								<h6
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Edit
@@ -140,11 +147,12 @@ const Folder_05 = () => {
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Delete
 								</h6>
-							</div>
+							</motion.div>
 						)}
 						<div
 							onClick={first}
@@ -173,24 +181,31 @@ const Folder_05 = () => {
 					</div>
 					<div style={{ position: "relative" }} className="box">
 						{dots === 2 && (
-							<div
+							<motion.div
+								initial={{ opacity: 0, scale: 0.9 }}
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.5 }}
 								style={{
 									position: "absolute",
-									top: "1rem",
+									top: ".2rem",
 									right: "3rem",
 									width: "8rem",
-									height: "1.5rme",
+									height: "3rem",
 									display: "flex",
 									flexDirection: "column",
 									justifyContent: "center",
+									gap: ".5rem",
 									alignItems: "center",
 									background: "white",
-									borderRadius: ".5rem",
-								}}>
+									borderRadius: ".3rem",
+								}}
+								className="shad">
 								<h6
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Edit
@@ -200,11 +215,12 @@ const Folder_05 = () => {
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Delete
 								</h6>
-							</div>
+							</motion.div>
 						)}
 						<div
 							onClick={second}
@@ -233,24 +249,31 @@ const Folder_05 = () => {
 					</div>
 					<div style={{ position: "relative" }} className="box">
 						{dots === 3 && (
-							<div
+							<motion.div
+								initial={{ opacity: 0, scale: 0.9 }}
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.5 }}
 								style={{
 									position: "absolute",
-									top: "1rem",
+									top: ".2rem",
 									right: "3rem",
 									width: "8rem",
-									height: "1.5rme",
+									height: "3rem",
 									display: "flex",
 									flexDirection: "column",
 									justifyContent: "center",
+									gap: ".5rem",
 									alignItems: "center",
 									background: "white",
-									borderRadius: ".5rem",
-								}}>
+									borderRadius: ".3rem",
+								}}
+								className="shad">
 								<h6
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Edit
@@ -260,11 +283,12 @@ const Folder_05 = () => {
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Delete
 								</h6>
-							</div>
+							</motion.div>
 						)}
 						<div
 							onClick={third}
@@ -293,24 +317,31 @@ const Folder_05 = () => {
 					</div>
 					<div style={{ position: "relative" }} className="box">
 						{dots === 4 && (
-							<div
+							<motion.div
+								initial={{ opacity: 0, scale: 0.9 }}
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.5 }}
 								style={{
 									position: "absolute",
-									top: "1rem",
+									top: ".2rem",
 									right: "3rem",
 									width: "8rem",
-									height: "1.5rme",
+									height: "3rem",
 									display: "flex",
 									flexDirection: "column",
 									justifyContent: "center",
+									gap: ".5rem",
 									alignItems: "center",
 									background: "white",
-									borderRadius: ".5rem",
-								}}>
+									borderRadius: ".3rem",
+								}}
+								className="shad">
 								<h6
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Edit
@@ -320,11 +351,12 @@ const Folder_05 = () => {
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Delete
 								</h6>
-							</div>
+							</motion.div>
 						)}
 						<div
 							onClick={four}
@@ -353,24 +385,31 @@ const Folder_05 = () => {
 					</div>
 					<div style={{ position: "relative" }} className="box">
 						{dots === 5 && (
-							<div
+							<motion.div
+								initial={{ opacity: 0, scale: 0.9 }}
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.5 }}
 								style={{
 									position: "absolute",
-									top: "1rem",
+									top: ".2rem",
 									right: "3rem",
 									width: "8rem",
-									height: "1.5rme",
+									height: "3rem",
 									display: "flex",
 									flexDirection: "column",
 									justifyContent: "center",
+									gap: ".5rem",
 									alignItems: "center",
 									background: "white",
-									borderRadius: ".5rem",
-								}}>
+									borderRadius: ".3rem",
+								}}
+								className="shad">
 								<h6
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Edit
@@ -380,11 +419,12 @@ const Folder_05 = () => {
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Delete
 								</h6>
-							</div>
+							</motion.div>
 						)}
 						<div
 							onClick={five}
@@ -413,24 +453,31 @@ const Folder_05 = () => {
 					</div>
 					<div style={{ position: "relative" }} className="box">
 						{dots === 6 && (
-							<div
+							<motion.div
+								initial={{ opacity: 0, scale: 0.9 }}
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.5 }}
 								style={{
 									position: "absolute",
-									top: "1rem",
+									top: ".2rem",
 									right: "3rem",
 									width: "8rem",
-									height: "1.5rme",
+									height: "3rem",
 									display: "flex",
 									flexDirection: "column",
 									justifyContent: "center",
+									gap: ".5rem",
 									alignItems: "center",
 									background: "white",
-									borderRadius: ".5rem",
-								}}>
+									borderRadius: ".3rem",
+								}}
+								className="shad">
 								<h6
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Edit
@@ -440,11 +487,12 @@ const Folder_05 = () => {
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Delete
 								</h6>
-							</div>
+							</motion.div>
 						)}
 						<div
 							onClick={six}
@@ -473,24 +521,31 @@ const Folder_05 = () => {
 					</div>
 					<div style={{ position: "relative" }} className="box">
 						{dots === 7 && (
-							<div
+							<motion.div
+								initial={{ opacity: 0, scale: 0.9 }}
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.5 }}
 								style={{
 									position: "absolute",
-									top: "1rem",
+									top: ".2rem",
 									right: "3rem",
 									width: "8rem",
-									height: "1.5rme",
+									height: "3rem",
 									display: "flex",
 									flexDirection: "column",
 									justifyContent: "center",
+									gap: ".5rem",
 									alignItems: "center",
 									background: "white",
-									borderRadius: ".5rem",
-								}}>
+									borderRadius: ".3rem",
+								}}
+								className="shad">
 								<h6
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Edit
@@ -500,11 +555,12 @@ const Folder_05 = () => {
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Delete
 								</h6>
-							</div>
+							</motion.div>
 						)}
 						<div
 							onClick={seven}
@@ -533,24 +589,31 @@ const Folder_05 = () => {
 					</div>
 					<div style={{ position: "relative" }} className="box">
 						{dots === 8 && (
-							<div
+							<motion.div
+								initial={{ opacity: 0, scale: 0.9 }}
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.5 }}
 								style={{
 									position: "absolute",
-									top: "1rem",
+									top: ".2rem",
 									right: "3rem",
 									width: "8rem",
-									height: "1.5rme",
+									height: "3rem",
 									display: "flex",
 									flexDirection: "column",
 									justifyContent: "center",
+									gap: ".5rem",
 									alignItems: "center",
 									background: "white",
-									borderRadius: ".5rem",
-								}}>
+									borderRadius: ".3rem",
+								}}
+								className="shad">
 								<h6
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Edit
@@ -560,11 +623,12 @@ const Folder_05 = () => {
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Delete
 								</h6>
-							</div>
+							</motion.div>
 						)}
 						<div
 							onClick={eight}
@@ -593,24 +657,31 @@ const Folder_05 = () => {
 					</div>
 					<div style={{ position: "relative" }} className="box">
 						{dots === 9 && (
-							<div
+							<motion.div
+								initial={{ opacity: 0, scale: 0.9 }}
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.5 }}
 								style={{
 									position: "absolute",
-									top: "1rem",
+									top: ".2rem",
 									right: "3rem",
 									width: "8rem",
-									height: "1.5rme",
+									height: "3rem",
 									display: "flex",
 									flexDirection: "column",
 									justifyContent: "center",
+									gap: ".5rem",
 									alignItems: "center",
 									background: "white",
-									borderRadius: ".5rem",
-								}}>
+									borderRadius: ".3rem",
+								}}
+								className="shad">
 								<h6
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Edit
@@ -620,11 +691,12 @@ const Folder_05 = () => {
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Delete
 								</h6>
-							</div>
+							</motion.div>
 						)}
 						<div
 							onClick={nine}
@@ -653,24 +725,31 @@ const Folder_05 = () => {
 					</div>
 					<div style={{ position: "relative" }} className="box">
 						{dots === 10 && (
-							<div
+							<motion.div
+								initial={{ opacity: 0, scale: 0.9 }}
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.5 }}
 								style={{
 									position: "absolute",
-									top: "1rem",
+									top: ".2rem",
 									right: "3rem",
 									width: "8rem",
-									height: "1.5rme",
+									height: "3rem",
 									display: "flex",
 									flexDirection: "column",
 									justifyContent: "center",
+									gap: ".5rem",
 									alignItems: "center",
 									background: "white",
-									borderRadius: ".5rem",
-								}}>
+									borderRadius: ".3rem",
+								}}
+								className="shad">
 								<h6
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Edit
@@ -680,11 +759,12 @@ const Folder_05 = () => {
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Delete
 								</h6>
-							</div>
+							</motion.div>
 						)}
 						<div
 							onClick={ten}
@@ -713,24 +793,31 @@ const Folder_05 = () => {
 					</div>
 					<div style={{ position: "relative" }} className="box">
 						{dots === 11 && (
-							<div
+							<motion.div
+								initial={{ opacity: 0, scale: 0.9 }}
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.5 }}
 								style={{
 									position: "absolute",
-									top: "1rem",
+									top: ".2rem",
 									right: "3rem",
 									width: "8rem",
-									height: "1.5rme",
+									height: "3rem",
 									display: "flex",
 									flexDirection: "column",
 									justifyContent: "center",
+									gap: ".5rem",
 									alignItems: "center",
 									background: "white",
-									borderRadius: ".5rem",
-								}}>
+									borderRadius: ".3rem",
+								}}
+								className="shad">
 								<h6
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Edit
@@ -740,11 +827,12 @@ const Folder_05 = () => {
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Delete
 								</h6>
-							</div>
+							</motion.div>
 						)}
 						<div
 							onClick={eleven}
@@ -773,24 +861,31 @@ const Folder_05 = () => {
 					</div>
 					<div style={{ position: "relative" }} className="box">
 						{dots === 12 && (
-							<div
+							<motion.div
+								initial={{ opacity: 0, scale: 0.9 }}
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.5 }}
 								style={{
 									position: "absolute",
-									top: "1rem",
+									top: ".2rem",
 									right: "3rem",
 									width: "8rem",
-									height: "1.5rme",
+									height: "3rem",
 									display: "flex",
 									flexDirection: "column",
 									justifyContent: "center",
+									gap: ".5rem",
 									alignItems: "center",
 									background: "white",
-									borderRadius: ".5rem",
-								}}>
+									borderRadius: ".3rem",
+								}}
+								className="shad">
 								<h6
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Edit
@@ -800,11 +895,12 @@ const Folder_05 = () => {
 									style={{
 										fontSize: "1rem",
 										background: "white",
+										fontWeight: "500",
 										color: "black",
 									}}>
 									Delete
 								</h6>
-							</div>
+							</motion.div>
 						)}
 						<div
 							onClick={twelve}
