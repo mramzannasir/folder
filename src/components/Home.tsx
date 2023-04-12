@@ -102,7 +102,7 @@ const Home = () => {
 							justifyContent: "space-between",
 							alignItems: "center",
 						}}>
-						<h1>FILES</h1>
+						<h1 style={{marginLeft:"1rem"}} >FILES</h1>
 						<div className="add">
 							<div className="upload-btn-wrapper ">
 								<button className="btn">
