@@ -12,6 +12,7 @@ import Folder_05 from "./Folder_05";
 import Folder_06 from "./Folder_06";
 import Folder_04 from "./Folder_04";
 import Folder_03 from "./Folder_03";
+import { motion } from "framer-motion";
 
 const Home = () => {
 	const [dots, setDots] = useState<number>(0);
@@ -93,13 +94,21 @@ const Home = () => {
 			<div className="a">
 				<Navbar />
 			</div>
-			<div style={{ width: "100%", display: "flex", height: "100%" }}>
+			<div
+				style={{
+					width: "100%",
+					display: "flex",
+					justifyContent: "end",
+					height: "100%",
+				}}>
 				{/* Sidebar */}
 				<div
 					style={{
 						background: "rgb(230, 247, 254)",
 						height: "100vh",
 						overflowY: "scroll",
+						position: "fixed",
+						left: "0",
 					}}
 					className="sidebar">
 					<>
@@ -113,6 +122,7 @@ const Home = () => {
 								alignItems: "center",
 								gap: "2rem",
 								boxSizing: "border-box",
+								paddingBottom: "5rem",
 							}}
 							className="sidebar-inner">
 							<div
@@ -121,24 +131,30 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background : `${pages == 1 ? "rgb(1, 175, 238)": "white" }`
+									background: `${pages == 1 ? "rgb(1, 175, 238)" : "white"}`,
 								}}
 								className="Sbox">
 								{dots === 1 && (
-									<div
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: .5 }}
 										style={{
 											position: "absolute",
-											top: "1rem",
+											top: ".2rem",
 											right: "3rem",
 											width: "8rem",
-											height: "1.5rme",
+											height: "2rme",
 											display: "flex",
 											flexDirection: "column",
 											justifyContent: "center",
 											alignItems: "center",
 											background: "white",
-											borderRadius: ".5rem",
-										}}>
+											borderRadius: "1rem",
+											
+										}}
+										className="shad">
 										<h6
 											style={{
 												fontSize: "1rem",
@@ -156,7 +172,7 @@ const Home = () => {
 											}}>
 											Delete
 										</h6>
-									</div>
+									</motion.div>
 								)}
 								<div
 									onClick={first}
@@ -189,7 +205,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background : `${pages == 2 ? "rgb(1, 175, 238)": "white" }`
+									background: `${pages == 2 ? "rgb(1, 175, 238)" : "white"}`,
 								}}
 								className="Sbox">
 								{dots === 2 && (
@@ -257,7 +273,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background : `${pages == 3 ? "rgb(1, 175, 238)": "white" }`
+									background: `${pages == 3 ? "rgb(1, 175, 238)" : "white"}`,
 								}}
 								className="Sbox">
 								{dots === 3 && (
@@ -325,7 +341,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background : `${pages == 4 ? "rgb(1, 175, 238)": "white" }`
+									background: `${pages == 4 ? "rgb(1, 175, 238)" : "white"}`,
 								}}
 								className="Sbox">
 								{dots === 4 && (
@@ -393,7 +409,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background : `${pages == 5 ? "rgb(1, 175, 238)": "white" }`
+									background: `${pages == 5 ? "rgb(1, 175, 238)" : "white"}`,
 								}}
 								className="Sbox">
 								{dots === 5 && (
@@ -461,7 +477,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background : `${pages == 6 ? "rgb(1, 175, 238)": "white" }`
+									background: `${pages == 6 ? "rgb(1, 175, 238)" : "white"}`,
 								}}
 								className="Sbox">
 								{dots === 6 && (
@@ -527,12 +543,14 @@ const Home = () => {
 					</>
 				</div>
 				{/* Pages */}
-				{pages == 1 && <Folder_01 />}
-				{pages == 2 && <Folder_02 />}
-				{pages == 3 && <Folder_03 />}
-				{pages == 4 && <Folder_04 />}
-				{pages == 5 && <Folder_05 />}
-				{pages == 6 && <Folder_06 />}
+				<div className="d">
+					{pages == 1 && <Folder_01 />}
+					{pages == 2 && <Folder_02 />}
+					{pages == 3 && <Folder_03 />}
+					{pages == 4 && <Folder_04 />}
+					{pages == 5 && <Folder_05 />}
+					{pages == 6 && <Folder_06 />}
+				</div>
 			</div>
 		</>
 	);
