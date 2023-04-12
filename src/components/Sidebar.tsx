@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsThreeDots } from "react-icons/bs";
-import {AiFillFolderOpen} from "react-icons/ai"
+import { AiFillFolderOpen } from "react-icons/ai";
 
 const Sidebar = () => {
 	const [dots, setDots] = useState<number>(0);
@@ -10,37 +10,37 @@ const Sidebar = () => {
 			setDots(0);
 		}
 	};
-  const second = () => {
+	const second = () => {
 		setDots(2);
 		if (dots === 2) {
 			setDots(0);
 		}
 	};
-  const three = () => {
+	const three = () => {
 		setDots(3);
 		if (dots === 3) {
 			setDots(0);
 		}
 	};
-  const four = () => {
+	const four = () => {
 		setDots(4);
 		if (dots === 4) {
 			setDots(0);
 		}
 	};
-  const five = () => {
+	const five = () => {
 		setDots(5);
 		if (dots === 5) {
 			setDots(0);
 		}
 	};
-  const six = () => {
+	const six = () => {
 		setDots(6);
 		if (dots === 6) {
 			setDots(0);
 		}
 	};
-  const seven = () => {
+	const seven = () => {
 		setDots(7);
 		if (dots === 7) {
 			setDots(0);
@@ -66,7 +66,7 @@ const Sidebar = () => {
 						transition: "all .5s",
 						cursor: "pointer",
 						color: "white",
-						background: "rgb(1, 175, 238)"
+						background: "rgb(1, 175, 238)",
 					}}
 					className="Sbox">
 					{dots === 1 && (
@@ -84,9 +84,23 @@ const Sidebar = () => {
 								background: "white",
 								borderRadius: ".5rem",
 							}}>
-							<h6 style={{ fontSize: "1rem", background: "white", color:"black" }}>Edit</h6>
+							<h6
+								style={{
+									fontSize: "1rem",
+									background: "white",
+									color: "black",
+								}}>
+								Edit
+							</h6>
 
-							<h6 style={{ fontSize: "1rem", background: "white", color:"black" }}>Delete</h6>
+							<h6
+								style={{
+									fontSize: "1rem",
+									background: "white",
+									color: "black",
+								}}>
+								Delete
+							</h6>
 						</div>
 					)}
 					<div
@@ -107,14 +121,14 @@ const Sidebar = () => {
 						<BsThreeDots color="skyblue" size={30} />
 					</div>
 					<div>
-						<div >
-              <AiFillFolderOpen size={40}/>
-            </div>
+						<div>
+							<AiFillFolderOpen size={40} />
+						</div>
 						<div className="sHead">My Folder</div>
 						<div className="sDes">created on Jun 23, 2020</div>
 					</div>
 				</div>
-        <div
+				<div
 					style={{
 						position: "relative",
 						transition: "all .5s",
@@ -136,9 +150,23 @@ const Sidebar = () => {
 								background: "white",
 								borderRadius: ".5rem",
 							}}>
-							<h6 style={{ fontSize: "1rem", background: "white", color:"black" }}>Edit</h6>
+							<h6
+								style={{
+									fontSize: "1rem",
+									background: "white",
+									color: "black",
+								}}>
+								Edit
+							</h6>
 
-							<h6 style={{ fontSize: "1rem", background: "white", color:"black" }}>Delete</h6>
+							<h6
+								style={{
+									fontSize: "1rem",
+									background: "white",
+									color: "black",
+								}}>
+								Delete
+							</h6>
 						</div>
 					)}
 					<div
@@ -159,14 +187,14 @@ const Sidebar = () => {
 						<BsThreeDots color="skyblue" size={30} />
 					</div>
 					<div>
-						<div >
-              <AiFillFolderOpen size={40}/>
-            </div>
+						<div>
+							<AiFillFolderOpen size={40} />
+						</div>
 						<div className="sHead">Other Folder</div>
 						<div className="sDes">created on Jun 23, 2020</div>
 					</div>
 				</div>
-        <div
+				<div
 					style={{
 						position: "relative",
 						transition: "all .5s",
@@ -188,9 +216,23 @@ const Sidebar = () => {
 								background: "white",
 								borderRadius: ".5rem",
 							}}>
-							<h6 style={{ fontSize: "1rem", background: "white", color:"black" }}>Edit</h6>
+							<h6
+								style={{
+									fontSize: "1rem",
+									background: "white",
+									color: "black",
+								}}>
+								Edit
+							</h6>
 
-							<h6 style={{ fontSize: "1rem", background: "white", color:"black" }}>Delete</h6>
+							<h6
+								style={{
+									fontSize: "1rem",
+									background: "white",
+									color: "black",
+								}}>
+								Delete
+							</h6>
 						</div>
 					)}
 					<div
@@ -211,14 +253,14 @@ const Sidebar = () => {
 						<BsThreeDots color="skyblue" size={30} />
 					</div>
 					<div>
-						<div >
-              <AiFillFolderOpen size={40}/>
-            </div>
+						<div>
+							<AiFillFolderOpen size={40} />
+						</div>
 						<div className="sHead">Other Folder</div>
 						<div className="sDes">created on Jun 23, 2020</div>
 					</div>
 				</div>
-        <div
+				<div
 					style={{
 						position: "relative",
 						transition: "all .5s",
@@ -240,9 +282,23 @@ const Sidebar = () => {
 								background: "white",
 								borderRadius: ".5rem",
 							}}>
-							<h6 style={{ fontSize: "1rem", background: "white", color:"black" }}>Edit</h6>
+							<h6
+								style={{
+									fontSize: "1rem",
+									background: "white",
+									color: "black",
+								}}>
+								Edit
+							</h6>
 
-							<h6 style={{ fontSize: "1rem", background: "white", color:"black" }}>Delete</h6>
+							<h6
+								style={{
+									fontSize: "1rem",
+									background: "white",
+									color: "black",
+								}}>
+								Delete
+							</h6>
 						</div>
 					)}
 					<div
@@ -263,14 +319,14 @@ const Sidebar = () => {
 						<BsThreeDots color="skyblue" size={30} />
 					</div>
 					<div>
-						<div >
-              <AiFillFolderOpen size={40}/>
-            </div>
+						<div>
+							<AiFillFolderOpen size={40} />
+						</div>
 						<div className="sHead">Other Folder</div>
 						<div className="sDes">created on Jun 23, 2020</div>
 					</div>
 				</div>
-        <div
+				<div
 					style={{
 						position: "relative",
 						transition: "all .5s",
@@ -292,9 +348,23 @@ const Sidebar = () => {
 								background: "white",
 								borderRadius: ".5rem",
 							}}>
-							<h6 style={{ fontSize: "1rem", background: "white", color:"black" }}>Edit</h6>
+							<h6
+								style={{
+									fontSize: "1rem",
+									background: "white",
+									color: "black",
+								}}>
+								Edit
+							</h6>
 
-							<h6 style={{ fontSize: "1rem", background: "white", color:"black" }}>Delete</h6>
+							<h6
+								style={{
+									fontSize: "1rem",
+									background: "white",
+									color: "black",
+								}}>
+								Delete
+							</h6>
 						</div>
 					)}
 					<div
@@ -315,14 +385,14 @@ const Sidebar = () => {
 						<BsThreeDots color="skyblue" size={30} />
 					</div>
 					<div>
-						<div >
-              <AiFillFolderOpen size={40}/>
-            </div>
+						<div>
+							<AiFillFolderOpen size={40} />
+						</div>
 						<div className="sHead">Other Folder</div>
 						<div className="sDes">created on Jun 23, 2020</div>
 					</div>
 				</div>
-        <div
+				<div
 					style={{
 						position: "relative",
 						transition: "all .5s",
@@ -344,9 +414,23 @@ const Sidebar = () => {
 								background: "white",
 								borderRadius: ".5rem",
 							}}>
-							<h6 style={{ fontSize: "1rem", background: "white", color:"black" }}>Edit</h6>
+							<h6
+								style={{
+									fontSize: "1rem",
+									background: "white",
+									color: "black",
+								}}>
+								Edit
+							</h6>
 
-							<h6 style={{ fontSize: "1rem", background: "white", color:"black" }}>Delete</h6>
+							<h6
+								style={{
+									fontSize: "1rem",
+									background: "white",
+									color: "black",
+								}}>
+								Delete
+							</h6>
 						</div>
 					)}
 					<div
@@ -367,9 +451,9 @@ const Sidebar = () => {
 						<BsThreeDots color="skyblue" size={30} />
 					</div>
 					<div>
-						<div >
-              <AiFillFolderOpen size={40}/>
-            </div>
+						<div>
+							<AiFillFolderOpen size={40} />
+						</div>
 						<div className="sHead">Other Folder</div>
 						<div className="sDes">created on Jun 23, 2020</div>
 					</div>

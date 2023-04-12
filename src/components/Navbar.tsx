@@ -59,6 +59,7 @@ const Navbar = () => {
 							{open ? <IoMdClose color="#ffffff" size={31} /> : ""}
 						</div>
 						<Link
+							onClick={() => setOpen(!open)}
 							style={{ textDecoration: "none", color: "white" }}
 							className={
 								router.pathname == "/"
@@ -69,6 +70,7 @@ const Navbar = () => {
 							My Folder
 						</Link>{" "}
 						<Link
+							onClick={() => setOpen(!open)}
 							style={{ textDecoration: "none", color: "white" }}
 							className={
 								router.pathname == "/contact"
@@ -79,6 +81,7 @@ const Navbar = () => {
 							Other Folder
 						</Link>
 						<Link
+							onClick={() => setOpen(!open)}
 							style={{ textDecoration: "none", color: "white" }}
 							className={
 								router.pathname == "/faq"
@@ -89,6 +92,7 @@ const Navbar = () => {
 							Other Folder
 						</Link>{" "}
 						<Link
+							onClick={() => setOpen(!open)}
 							style={{ textDecoration: "none", color: "white" }}
 							className={
 								router.pathname == "/about"

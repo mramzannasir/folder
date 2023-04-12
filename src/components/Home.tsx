@@ -5,9 +5,17 @@ import { IoAddOutline } from "react-icons/io5";
 import { useState } from "react";
 import { BsThreeDots } from "react-icons/bs";
 import { VscFilePdf } from "react-icons/vsc";
+import { AiFillFolderOpen } from "react-icons/ai";
+import Folder_01 from "./Folder_01";
+import Folder_02 from "./Folder_02";
+import Folder_05 from "./Folder_05";
+import Folder_06 from "./Folder_06";
+import Folder_04 from "./Folder_04";
+import Folder_03 from "./Folder_03";
 
 const Home = () => {
 	const [dots, setDots] = useState<number>(0);
+	const [pages, setPages] = useState<number>(1);
 	const first = () => {
 		setDots(1);
 		if (dots === 1) {
@@ -86,6 +94,7 @@ const Home = () => {
 				<Navbar />
 			</div>
 			<div style={{ width: "100%", display: "flex", height: "100%" }}>
+				{/* Sidebar */}
 				<div
 					style={{
 						background: "rgb(230, 247, 254)",
@@ -93,753 +102,437 @@ const Home = () => {
 						overflowY: "scroll",
 					}}
 					className="sidebar">
-					<Sidebar />
+					<>
+						<h1 style={{ paddingLeft: ".8rem" }}>FOLDERS</h1>
+						<div
+							style={{
+								width: "100%",
+								display: "flex",
+								flexDirection: "column",
+								justifyContent: "center",
+								alignItems: "center",
+								gap: "2rem",
+								boxSizing: "border-box",
+							}}
+							className="sidebar-inner">
+							<div
+								onClick={() => setPages(1)}
+								style={{
+									position: "relative",
+									transition: "all .5s",
+									cursor: "pointer",
+									background : `${pages == 1 ? "rgb(1, 175, 238)": "white" }`
+								}}
+								className="Sbox">
+								{dots === 1 && (
+									<div
+										style={{
+											position: "absolute",
+											top: "1rem",
+											right: "3rem",
+											width: "8rem",
+											height: "1.5rme",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".5rem",
+										}}>
+										<h6
+											style={{
+												fontSize: "1rem",
+												background: "white",
+												color: "black",
+											}}>
+											Edit
+										</h6>
+
+										<h6
+											style={{
+												fontSize: "1rem",
+												background: "white",
+												color: "black",
+											}}>
+											Delete
+										</h6>
+									</div>
+								)}
+								<div
+									onClick={first}
+									style={{
+										position: "absolute",
+										top: "1rem",
+										right: "1rem",
+										width: "3rem",
+										height: "1.5rme",
+										display: "flex",
+										justifyContent: "center",
+										alignItems: "center",
+										background: "white",
+										borderRadius: ".5rem",
+									}}
+									className="dot">
+									<BsThreeDots color="skyblue" size={30} />
+								</div>
+								<div>
+									<div>
+										<AiFillFolderOpen size={40} />
+									</div>
+									<div className="sHead">My Folder</div>
+									<div className="sDes">created on Jun 23, 2020</div>
+								</div>
+							</div>
+							<div
+								onClick={() => setPages(2)}
+								style={{
+									position: "relative",
+									transition: "all .5s",
+									cursor: "pointer",
+									background : `${pages == 2 ? "rgb(1, 175, 238)": "white" }`
+								}}
+								className="Sbox">
+								{dots === 2 && (
+									<div
+										style={{
+											position: "absolute",
+											top: "1rem",
+											right: "3rem",
+											width: "8rem",
+											height: "1.5rme",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".5rem",
+										}}>
+										<h6
+											style={{
+												fontSize: "1rem",
+												background: "white",
+												color: "black",
+											}}>
+											Edit
+										</h6>
+
+										<h6
+											style={{
+												fontSize: "1rem",
+												background: "white",
+												color: "black",
+											}}>
+											Delete
+										</h6>
+									</div>
+								)}
+								<div
+									onClick={second}
+									style={{
+										position: "absolute",
+										top: "1rem",
+										right: "1rem",
+										width: "3rem",
+										height: "1.5rme",
+										display: "flex",
+										justifyContent: "center",
+										alignItems: "center",
+										background: "white",
+										borderRadius: ".5rem",
+									}}
+									className="dot">
+									<BsThreeDots color="skyblue" size={30} />
+								</div>
+								<div>
+									<div>
+										<AiFillFolderOpen size={40} />
+									</div>
+									<div className="sHead">Other Folder</div>
+									<div className="sDes">created on Jun 23, 2020</div>
+								</div>
+							</div>
+							<div
+								onClick={() => setPages(3)}
+								style={{
+									position: "relative",
+									transition: "all .5s",
+									cursor: "pointer",
+									background : `${pages == 3 ? "rgb(1, 175, 238)": "white" }`
+								}}
+								className="Sbox">
+								{dots === 3 && (
+									<div
+										style={{
+											position: "absolute",
+											top: "1rem",
+											right: "3rem",
+											width: "8rem",
+											height: "1.5rme",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".5rem",
+										}}>
+										<h6
+											style={{
+												fontSize: "1rem",
+												background: "white",
+												color: "black",
+											}}>
+											Edit
+										</h6>
+
+										<h6
+											style={{
+												fontSize: "1rem",
+												background: "white",
+												color: "black",
+											}}>
+											Delete
+										</h6>
+									</div>
+								)}
+								<div
+									onClick={third}
+									style={{
+										position: "absolute",
+										top: "1rem",
+										right: "1rem",
+										width: "3rem",
+										height: "1.5rme",
+										display: "flex",
+										justifyContent: "center",
+										alignItems: "center",
+										background: "white",
+										borderRadius: ".5rem",
+									}}
+									className="dot">
+									<BsThreeDots color="skyblue" size={30} />
+								</div>
+								<div>
+									<div>
+										<AiFillFolderOpen size={40} />
+									</div>
+									<div className="sHead">Other Folder</div>
+									<div className="sDes">created on Jun 23, 2020</div>
+								</div>
+							</div>
+							<div
+								onClick={() => setPages(4)}
+								style={{
+									position: "relative",
+									transition: "all .5s",
+									cursor: "pointer",
+									background : `${pages == 4 ? "rgb(1, 175, 238)": "white" }`
+								}}
+								className="Sbox">
+								{dots === 4 && (
+									<div
+										style={{
+											position: "absolute",
+											top: "1rem",
+											right: "3rem",
+											width: "8rem",
+											height: "1.5rme",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".5rem",
+										}}>
+										<h6
+											style={{
+												fontSize: "1rem",
+												background: "white",
+												color: "black",
+											}}>
+											Edit
+										</h6>
+
+										<h6
+											style={{
+												fontSize: "1rem",
+												background: "white",
+												color: "black",
+											}}>
+											Delete
+										</h6>
+									</div>
+								)}
+								<div
+									onClick={four}
+									style={{
+										position: "absolute",
+										top: "1rem",
+										right: "1rem",
+										width: "3rem",
+										height: "1.5rme",
+										display: "flex",
+										justifyContent: "center",
+										alignItems: "center",
+										background: "white",
+										borderRadius: ".5rem",
+									}}
+									className="dot">
+									<BsThreeDots color="skyblue" size={30} />
+								</div>
+								<div>
+									<div>
+										<AiFillFolderOpen size={40} />
+									</div>
+									<div className="sHead">Other Folder</div>
+									<div className="sDes">created on Jun 23, 2020</div>
+								</div>
+							</div>
+							<div
+								onClick={() => setPages(5)}
+								style={{
+									position: "relative",
+									transition: "all .5s",
+									cursor: "pointer",
+									background : `${pages == 5 ? "rgb(1, 175, 238)": "white" }`
+								}}
+								className="Sbox">
+								{dots === 5 && (
+									<div
+										style={{
+											position: "absolute",
+											top: "1rem",
+											right: "3rem",
+											width: "8rem",
+											height: "1.5rme",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".5rem",
+										}}>
+										<h6
+											style={{
+												fontSize: "1rem",
+												background: "white",
+												color: "black",
+											}}>
+											Edit
+										</h6>
+
+										<h6
+											style={{
+												fontSize: "1rem",
+												background: "white",
+												color: "black",
+											}}>
+											Delete
+										</h6>
+									</div>
+								)}
+								<div
+									onClick={five}
+									style={{
+										position: "absolute",
+										top: "1rem",
+										right: "1rem",
+										width: "3rem",
+										height: "1.5rme",
+										display: "flex",
+										justifyContent: "center",
+										alignItems: "center",
+										background: "white",
+										borderRadius: ".5rem",
+									}}
+									className="dot">
+									<BsThreeDots color="skyblue" size={30} />
+								</div>
+								<div>
+									<div>
+										<AiFillFolderOpen size={40} />
+									</div>
+									<div className="sHead">Other Folder</div>
+									<div className="sDes">created on Jun 23, 2020</div>
+								</div>
+							</div>
+							<div
+								onClick={() => setPages(6)}
+								style={{
+									position: "relative",
+									transition: "all .5s",
+									cursor: "pointer",
+									background : `${pages == 6 ? "rgb(1, 175, 238)": "white" }`
+								}}
+								className="Sbox">
+								{dots === 6 && (
+									<div
+										style={{
+											position: "absolute",
+											top: "1rem",
+											right: "3rem",
+											width: "8rem",
+											height: "1.5rme",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".5rem",
+										}}>
+										<h6
+											style={{
+												fontSize: "1rem",
+												background: "white",
+												color: "black",
+											}}>
+											Edit
+										</h6>
+
+										<h6
+											style={{
+												fontSize: "1rem",
+												background: "white",
+												color: "black",
+											}}>
+											Delete
+										</h6>
+									</div>
+								)}
+								<div
+									onClick={six}
+									style={{
+										position: "absolute",
+										top: "1rem",
+										right: "1rem",
+										width: "3rem",
+										height: "1.5rme",
+										display: "flex",
+										justifyContent: "center",
+										alignItems: "center",
+										background: "white",
+										borderRadius: ".5rem",
+									}}
+									className="dot">
+									<BsThreeDots color="skyblue" size={30} />
+								</div>
+								<div>
+									<div>
+										<AiFillFolderOpen size={40} />
+									</div>
+									<div className="sHead">Other Folder</div>
+									<div className="sDes">created on Jun 23, 2020</div>
+								</div>
+							</div>
+						</div>
+					</>
 				</div>
-				<div className="page-side">
-					<div
-						style={{
-							display: "flex",
-							justifyContent: "space-between",
-							alignItems: "center",
-						}}>
-						<h1 style={{marginLeft:"1rem"}} >FILES</h1>
-						<div className="add">
-							<div className="upload-btn-wrapper ">
-								<button className="btn">
-									<IoAddOutline color="#375f6b" size={35} />
-								</button>
-								<input
-									style={{ width: "100%" }}
-									className=" b"
-									type="file"
-									name="myfile"
-								/>
-							</div>
-						</div>
-					</div>
-					<div className="boxP">
-						<div style={{}} className="box">
-							{dots === 1 && (
-								<div
-									style={{
-										position: "absolute",
-										top: "1rem",
-										right: "3rem",
-										width: "8rem",
-										height: "1.5rme",
-										display: "flex",
-										flexDirection: "column",
-										justifyContent: "center",
-										alignItems: "center",
-										background: "white",
-										borderRadius: ".5rem",
-									}}>
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Edit
-									</h6>
-
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Delete
-									</h6>
-								</div>
-							)}
-							<div
-								onClick={first}
-								style={{
-									position: "absolute",
-									top: "1rem",
-									right: "1rem",
-									width: "3rem",
-									height: "1.5rme",
-									display: "flex",
-									justifyContent: "center",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".5rem",
-								}}
-								className="dot">
-								<BsThreeDots color="skyblue" size={30} />
-							</div>
-							<div>
-								<div>
-									<VscFilePdf size={40} color="#1c3238" />
-								</div>
-								<div className="Head">New.pdf</div>
-								<div className="sDes">created on Jun 23, 2020</div>
-							</div>
-						</div>
-						<div style={{ position: "relative" }} className="box">
-							{dots === 2 && (
-								<div
-									style={{
-										position: "absolute",
-										top: "1rem",
-										right: "3rem",
-										width: "8rem",
-										height: "1.5rme",
-										display: "flex",
-										flexDirection: "column",
-										justifyContent: "center",
-										alignItems: "center",
-										background: "white",
-										borderRadius: ".5rem",
-									}}>
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Edit
-									</h6>
-
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Delete
-									</h6>
-								</div>
-							)}
-							<div
-								onClick={second}
-								style={{
-									position: "absolute",
-									top: "1rem",
-									right: "1rem",
-									width: "3rem",
-									height: "1.5rme",
-									display: "flex",
-									justifyContent: "center",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".5rem",
-								}}
-								className="dot">
-								<BsThreeDots color="skyblue" size={30} />
-							</div>
-							<div>
-								<div>
-									<VscFilePdf size={40} color="#1c3238" />
-								</div>
-								<div className="Head">New.pdf</div>
-								<div className="sDes">created on Jun 23, 2020</div>
-							</div>
-						</div>
-						<div style={{ position: "relative" }} className="box">
-							{dots === 3 && (
-								<div
-									style={{
-										position: "absolute",
-										top: "1rem",
-										right: "3rem",
-										width: "8rem",
-										height: "1.5rme",
-										display: "flex",
-										flexDirection: "column",
-										justifyContent: "center",
-										alignItems: "center",
-										background: "white",
-										borderRadius: ".5rem",
-									}}>
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Edit
-									</h6>
-
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Delete
-									</h6>
-								</div>
-							)}
-							<div
-								onClick={third}
-								style={{
-									position: "absolute",
-									top: "1rem",
-									right: "1rem",
-									width: "3rem",
-									height: "1.5rme",
-									display: "flex",
-									justifyContent: "center",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".5rem",
-								}}
-								className="dot">
-								<BsThreeDots color="skyblue" size={30} />
-							</div>
-							<div>
-								<div>
-									<VscFilePdf size={40} color="#1c3238" />
-								</div>
-								<div className="Head">New.pdf</div>
-								<div className="sDes">created on Jun 23, 2020</div>
-							</div>
-						</div>
-						<div style={{ position: "relative" }} className="box">
-							{dots === 4 && (
-								<div
-									style={{
-										position: "absolute",
-										top: "1rem",
-										right: "3rem",
-										width: "8rem",
-										height: "1.5rme",
-										display: "flex",
-										flexDirection: "column",
-										justifyContent: "center",
-										alignItems: "center",
-										background: "white",
-										borderRadius: ".5rem",
-									}}>
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Edit
-									</h6>
-
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Delete
-									</h6>
-								</div>
-							)}
-							<div
-								onClick={four}
-								style={{
-									position: "absolute",
-									top: "1rem",
-									right: "1rem",
-									width: "3rem",
-									height: "1.5rme",
-									display: "flex",
-									justifyContent: "center",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".5rem",
-								}}
-								className="dot">
-								<BsThreeDots color="skyblue" size={30} />
-							</div>
-							<div>
-								<div>
-									<VscFilePdf size={40} color="#1c3238" />
-								</div>
-								<div className="Head">New.pdf</div>
-								<div className="sDes">created on Jun 23, 2020</div>
-							</div>
-						</div>
-						<div style={{ position: "relative" }} className="box">
-							{dots === 5 && (
-								<div
-									style={{
-										position: "absolute",
-										top: "1rem",
-										right: "3rem",
-										width: "8rem",
-										height: "1.5rme",
-										display: "flex",
-										flexDirection: "column",
-										justifyContent: "center",
-										alignItems: "center",
-										background: "white",
-										borderRadius: ".5rem",
-									}}>
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Edit
-									</h6>
-
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Delete
-									</h6>
-								</div>
-							)}
-							<div
-								onClick={five}
-								style={{
-									position: "absolute",
-									top: "1rem",
-									right: "1rem",
-									width: "3rem",
-									height: "1.5rme",
-									display: "flex",
-									justifyContent: "center",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".5rem",
-								}}
-								className="dot">
-								<BsThreeDots color="skyblue" size={30} />
-							</div>
-							<div>
-								<div>
-									<VscFilePdf size={40} color="#1c3238" />
-								</div>
-								<div className="Head">New.pdf</div>
-								<div className="sDes">created on Jun 23, 2020</div>
-							</div>
-						</div>
-						<div style={{ position: "relative" }} className="box">
-							{dots === 6 && (
-								<div
-									style={{
-										position: "absolute",
-										top: "1rem",
-										right: "3rem",
-										width: "8rem",
-										height: "1.5rme",
-										display: "flex",
-										flexDirection: "column",
-										justifyContent: "center",
-										alignItems: "center",
-										background: "white",
-										borderRadius: ".5rem",
-									}}>
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Edit
-									</h6>
-
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Delete
-									</h6>
-								</div>
-							)}
-							<div
-								onClick={six}
-								style={{
-									position: "absolute",
-									top: "1rem",
-									right: "1rem",
-									width: "3rem",
-									height: "1.5rme",
-									display: "flex",
-									justifyContent: "center",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".5rem",
-								}}
-								className="dot">
-								<BsThreeDots color="skyblue" size={30} />
-							</div>
-							<div>
-								<div>
-									<VscFilePdf size={40} color="#1c3238" />
-								</div>
-								<div className="Head">New.pdf</div>
-								<div className="sDes">created on Jun 23, 2020</div>
-							</div>
-						</div>
-						<div style={{ position: "relative" }} className="box">
-							{dots === 7 && (
-								<div
-									style={{
-										position: "absolute",
-										top: "1rem",
-										right: "3rem",
-										width: "8rem",
-										height: "1.5rme",
-										display: "flex",
-										flexDirection: "column",
-										justifyContent: "center",
-										alignItems: "center",
-										background: "white",
-										borderRadius: ".5rem",
-									}}>
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Edit
-									</h6>
-
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Delete
-									</h6>
-								</div>
-							)}
-							<div
-								onClick={seven}
-								style={{
-									position: "absolute",
-									top: "1rem",
-									right: "1rem",
-									width: "3rem",
-									height: "1.5rme",
-									display: "flex",
-									justifyContent: "center",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".5rem",
-								}}
-								className="dot">
-								<BsThreeDots color="skyblue" size={30} />
-							</div>
-							<div>
-								<div>
-									<VscFilePdf size={40} color="#1c3238" />
-								</div>
-								<div className="Head">New.pdf</div>
-								<div className="sDes">created on Jun 23, 2020</div>
-							</div>
-						</div>
-						<div style={{ position: "relative" }} className="box">
-							{dots === 8 && (
-								<div
-									style={{
-										position: "absolute",
-										top: "1rem",
-										right: "3rem",
-										width: "8rem",
-										height: "1.5rme",
-										display: "flex",
-										flexDirection: "column",
-										justifyContent: "center",
-										alignItems: "center",
-										background: "white",
-										borderRadius: ".5rem",
-									}}>
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Edit
-									</h6>
-
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Delete
-									</h6>
-								</div>
-							)}
-							<div
-								onClick={eight}
-								style={{
-									position: "absolute",
-									top: "1rem",
-									right: "1rem",
-									width: "3rem",
-									height: "1.5rme",
-									display: "flex",
-									justifyContent: "center",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".5rem",
-								}}
-								className="dot">
-								<BsThreeDots color="skyblue" size={30} />
-							</div>
-							<div>
-								<div>
-									<VscFilePdf size={40} color="#1c3238" />
-								</div>
-								<div className="Head">New.pdf</div>
-								<div className="sDes">created on Jun 23, 2020</div>
-							</div>
-						</div>
-						<div style={{ position: "relative" }} className="box">
-							{dots === 9 && (
-								<div
-									style={{
-										position: "absolute",
-										top: "1rem",
-										right: "3rem",
-										width: "8rem",
-										height: "1.5rme",
-										display: "flex",
-										flexDirection: "column",
-										justifyContent: "center",
-										alignItems: "center",
-										background: "white",
-										borderRadius: ".5rem",
-									}}>
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Edit
-									</h6>
-
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Delete
-									</h6>
-								</div>
-							)}
-							<div
-								onClick={nine}
-								style={{
-									position: "absolute",
-									top: "1rem",
-									right: "1rem",
-									width: "3rem",
-									height: "1.5rme",
-									display: "flex",
-									justifyContent: "center",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".5rem",
-								}}
-								className="dot">
-								<BsThreeDots color="skyblue" size={30} />
-							</div>
-							<div>
-								<div>
-									<VscFilePdf size={40} color="#1c3238" />
-								</div>
-								<div className="Head">New.pdf</div>
-								<div className="sDes">created on Jun 23, 2020</div>
-							</div>
-						</div>
-						<div style={{ position: "relative" }} className="box">
-							{dots === 10 && (
-								<div
-									style={{
-										position: "absolute",
-										top: "1rem",
-										right: "3rem",
-										width: "8rem",
-										height: "1.5rme",
-										display: "flex",
-										flexDirection: "column",
-										justifyContent: "center",
-										alignItems: "center",
-										background: "white",
-										borderRadius: ".5rem",
-									}}>
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Edit
-									</h6>
-
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Delete
-									</h6>
-								</div>
-							)}
-							<div
-								onClick={ten}
-								style={{
-									position: "absolute",
-									top: "1rem",
-									right: "1rem",
-									width: "3rem",
-									height: "1.5rme",
-									display: "flex",
-									justifyContent: "center",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".5rem",
-								}}
-								className="dot">
-								<BsThreeDots color="skyblue" size={30} />
-							</div>
-							<div>
-								<div>
-									<VscFilePdf size={40} color="#1c3238" />
-								</div>
-								<div className="Head">New.pdf</div>
-								<div className="sDes">created on Jun 23, 2020</div>
-							</div>
-						</div>
-						<div style={{ position: "relative" }} className="box">
-							{dots === 11 && (
-								<div
-									style={{
-										position: "absolute",
-										top: "1rem",
-										right: "3rem",
-										width: "8rem",
-										height: "1.5rme",
-										display: "flex",
-										flexDirection: "column",
-										justifyContent: "center",
-										alignItems: "center",
-										background: "white",
-										borderRadius: ".5rem",
-									}}>
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Edit
-									</h6>
-
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Delete
-									</h6>
-								</div>
-							)}
-							<div
-								onClick={eleven}
-								style={{
-									position: "absolute",
-									top: "1rem",
-									right: "1rem",
-									width: "3rem",
-									height: "1.5rme",
-									display: "flex",
-									justifyContent: "center",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".5rem",
-								}}
-								className="dot">
-								<BsThreeDots color="skyblue" size={30} />
-							</div>
-							<div>
-								<div>
-									<VscFilePdf size={40} color="#1c3238" />
-								</div>
-								<div className="Head">New.pdf</div>
-								<div className="sDes">created on Jun 23, 2020</div>
-							</div>
-						</div>
-						<div style={{ position: "relative" }} className="box">
-							{dots === 12 && (
-								<div
-									style={{
-										position: "absolute",
-										top: "1rem",
-										right: "3rem",
-										width: "8rem",
-										height: "1.5rme",
-										display: "flex",
-										flexDirection: "column",
-										justifyContent: "center",
-										alignItems: "center",
-										background: "white",
-										borderRadius: ".5rem",
-									}}>
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Edit
-									</h6>
-
-									<h6
-										style={{
-											fontSize: "1rem",
-											background: "white",
-											color: "black",
-										}}>
-										Delete
-									</h6>
-								</div>
-							)}
-							<div
-								onClick={twelve}
-								style={{
-									position: "absolute",
-									top: "1rem",
-									right: "1rem",
-									width: "3rem",
-									height: "1.5rme",
-									display: "flex",
-									justifyContent: "center",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".5rem",
-								}}
-								className="dot">
-								<BsThreeDots color="skyblue" size={30} />
-							</div>
-							<div>
-								<div>
-									<VscFilePdf size={40} color="#1c3238" />
-								</div>
-								<div className="Head">New.pdf</div>
-								<div className="sDes">created on Jun 23, 2020</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				{/* Pages */}
+				{pages == 1 && <Folder_01 />}
+				{pages == 2 && <Folder_02 />}
+				{pages == 3 && <Folder_03 />}
+				{pages == 4 && <Folder_04 />}
+				{pages == 5 && <Folder_05 />}
+				{pages == 6 && <Folder_06 />}
 			</div>
 		</>
 	);
