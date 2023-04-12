@@ -61,11 +61,11 @@ const Navbar = () => {
 						<Link
 							style={{ textDecoration: "none", color: "white" }}
 							className={
-								router.pathname == "/customize"
+								router.pathname == "/"
 									? " rounded-r-xl  px-4 py-2 text-xl font-semibold text-white lg:w-auto lg:bg-inherit lg:text-base lg:font-medium"
 									: "pl-2 text-xl font-semibold text-white lg:pl-0 lg:text-base lg:font-medium "
 							}
-							href={"/product"}>
+							href={"/"}>
 							My Folder
 						</Link>{" "}
 						<Link
@@ -75,7 +75,7 @@ const Navbar = () => {
 									? " rounded-r-xl  px-4 py-2 text-xl font-semibold text-white lg:w-auto lg:bg-inherit lg:text-base lg:font-medium"
 									: "pl-2 text-xl font-semibold text-white lg:pl-0 lg:text-base lg:font-medium"
 							}
-							href={"/contact"}>
+							href={"/"}>
 							Other Folder
 						</Link>
 						<Link
@@ -85,7 +85,7 @@ const Navbar = () => {
 									? " rounded-r-xl  px-4 py-2 text-xl font-semibold text-white lg:w-auto lg:bg-inherit lg:text-base lg:font-medium"
 									: "pl-2 text-xl font-semibold text-white lg:pl-0 lg:text-base lg:font-medium"
 							}
-							href={"/faq"}>
+							href={"/"}>
 							Other Folder
 						</Link>{" "}
 						<Link
@@ -95,7 +95,7 @@ const Navbar = () => {
 									? " rounded-r-xl  px-4 py-2 text-xl font-semibold text-white lg:w-auto lg:bg-inherit lg:text-base lg:font-medium"
 									: "pl-2 text-xl font-semibold text-white lg:pl-0 lg:text-base lg:font-medium"
 							}
-							href={"/about"}>
+							href={"/"}>
 							Other Folder
 						</Link>{" "}
 					</div>
