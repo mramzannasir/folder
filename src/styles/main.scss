@@ -118,6 +118,9 @@ h1 {
 .boxP {
 	gap: 4rem;
 }
+.add{
+	display: none;
+}
 // ___________________________________________________________________________________________________________________________________
 
 /* Styles for screens wider than 768px */
@@ -159,6 +162,9 @@ h1 {
 	}
 	body {
 		padding: 0px;
+	}
+	.add{
+		display: block;
 	}
 }
 /* Styles for screens wider than 1440px */
