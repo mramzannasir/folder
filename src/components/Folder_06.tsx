@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-import { IoAddOutline } from "react-icons/io5";
+import { BsCloudUpload } from "react-icons/bs";
 import { useState } from "react";
 import { BsThreeDots } from "react-icons/bs";
 import { VscFilePdf } from "react-icons/vsc";
 import { motion } from "framer-motion";
-
-const Folder_01 = () => {
+import { BsTrash3Fill } from "react-icons/bs";
+const Folder_06 = () => {
 	const [dots, setDots] = useState<number>(0);
 	const first = () => {
 		setDots(1);
@@ -91,10 +91,10 @@ const Folder_01 = () => {
 						alignItems: "center",
 					}}>
 					<h1 style={{ marginLeft: "1rem" }}>FILES</h1>
-					<div className="add">
-						<div className="upload-btn-wrapper ">
-							<button className="btn">
-								<IoAddOutline color="#375f6b" size={35} />
+					<div style={{cursor:"pointer"}} className="add">
+						<div className="upload-btn-wrapper">
+							<button style={{display:"flex", alignItems:"center", gap:".5rem",  }} className="btn">
+								<BsCloudUpload color="#375f6b" size={20} /> Upload File
 							</button>
 							<input
 								style={{ width: "100%" }}
@@ -112,48 +112,32 @@ const Folder_01 = () => {
 					transition={{ duration: 1 }}
 					className="boxP">
 					<div style={{}} className="box">
-						{dots === 1 && (
-							<motion.div
-								initial={{ opacity: 0, scale: 0.9 }}
-								animate={{ opacity: 1, scale: 1 }}
-								exit={{ opacity: 0 }}
-								transition={{ duration: 0.5 }}
-								style={{
-									position: "absolute",
-									top: ".2rem",
-									right: "3rem",
-									width: "8rem",
-									height: "3rem",
-									display: "flex",
-									flexDirection: "column",
-									justifyContent: "center",
-									gap: ".5rem",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".3rem",
-								}}
-								className="shad">
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Edit
-								</h6>
-
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Delete
-								</h6>
-							</motion.div>
-						)}
+					{dots === 1 && (
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
+										style={{
+											position: "absolute",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".3rem",
+										}}
+										className="shad">
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
+									</motion.div>
+								)}
 						<div
 							onClick={first}
 							style={{
@@ -180,48 +164,32 @@ const Folder_01 = () => {
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
-						{dots === 2 && (
-							<motion.div
-								initial={{ opacity: 0, scale: 0.9 }}
-								animate={{ opacity: 1, scale: 1 }}
-								exit={{ opacity: 0 }}
-								transition={{ duration: 0.5 }}
-								style={{
-									position: "absolute",
-									top: ".2rem",
-									right: "3rem",
-									width: "8rem",
-									height: "3rem",
-									display: "flex",
-									flexDirection: "column",
-									justifyContent: "center",
-									gap: ".5rem",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".3rem",
-								}}
-								className="shad">
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Edit
-								</h6>
-
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Delete
-								</h6>
-							</motion.div>
-						)}
+					{dots === 2 && (
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
+										style={{
+											position: "absolute",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".3rem",
+										}}
+										className="shad">
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
+									</motion.div>
+								)}
 						<div
 							onClick={second}
 							style={{
@@ -248,48 +216,32 @@ const Folder_01 = () => {
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
-						{dots === 3 && (
-							<motion.div
-								initial={{ opacity: 0, scale: 0.9 }}
-								animate={{ opacity: 1, scale: 1 }}
-								exit={{ opacity: 0 }}
-								transition={{ duration: 0.5 }}
-								style={{
-									position: "absolute",
-									top: ".2rem",
-									right: "3rem",
-									width: "8rem",
-									height: "3rem",
-									display: "flex",
-									flexDirection: "column",
-									justifyContent: "center",
-									gap: ".5rem",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".3rem",
-								}}
-								className="shad">
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Edit
-								</h6>
-
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Delete
-								</h6>
-							</motion.div>
-						)}
+					{dots === 3 && (
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
+										style={{
+											position: "absolute",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".3rem",
+										}}
+										className="shad">
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
+									</motion.div>
+								)}
 						<div
 							onClick={third}
 							style={{
@@ -316,48 +268,32 @@ const Folder_01 = () => {
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
-						{dots === 4 && (
-							<motion.div
-								initial={{ opacity: 0, scale: 0.9 }}
-								animate={{ opacity: 1, scale: 1 }}
-								exit={{ opacity: 0 }}
-								transition={{ duration: 0.5 }}
-								style={{
-									position: "absolute",
-									top: ".2rem",
-									right: "3rem",
-									width: "8rem",
-									height: "3rem",
-									display: "flex",
-									flexDirection: "column",
-									justifyContent: "center",
-									gap: ".5rem",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".3rem",
-								}}
-								className="shad">
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Edit
-								</h6>
-
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Delete
-								</h6>
-							</motion.div>
-						)}
+					{dots === 4 && (
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
+										style={{
+											position: "absolute",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".3rem",
+										}}
+										className="shad">
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
+									</motion.div>
+								)}
 						<div
 							onClick={four}
 							style={{
@@ -384,48 +320,32 @@ const Folder_01 = () => {
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
-						{dots === 5 && (
-							<motion.div
-								initial={{ opacity: 0, scale: 0.9 }}
-								animate={{ opacity: 1, scale: 1 }}
-								exit={{ opacity: 0 }}
-								transition={{ duration: 0.5 }}
-								style={{
-									position: "absolute",
-									top: ".2rem",
-									right: "3rem",
-									width: "8rem",
-									height: "3rem",
-									display: "flex",
-									flexDirection: "column",
-									justifyContent: "center",
-									gap: ".5rem",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".3rem",
-								}}
-								className="shad">
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Edit
-								</h6>
-
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Delete
-								</h6>
-							</motion.div>
-						)}
+					{dots === 5 && (
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
+										style={{
+											position: "absolute",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".3rem",
+										}}
+										className="shad">
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
+									</motion.div>
+								)}
 						<div
 							onClick={five}
 							style={{
@@ -452,48 +372,32 @@ const Folder_01 = () => {
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
-						{dots === 6 && (
-							<motion.div
-								initial={{ opacity: 0, scale: 0.9 }}
-								animate={{ opacity: 1, scale: 1 }}
-								exit={{ opacity: 0 }}
-								transition={{ duration: 0.5 }}
-								style={{
-									position: "absolute",
-									top: ".2rem",
-									right: "3rem",
-									width: "8rem",
-									height: "3rem",
-									display: "flex",
-									flexDirection: "column",
-									justifyContent: "center",
-									gap: ".5rem",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".3rem",
-								}}
-								className="shad">
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Edit
-								</h6>
-
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Delete
-								</h6>
-							</motion.div>
-						)}
+					{dots === 6 && (
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
+										style={{
+											position: "absolute",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".3rem",
+										}}
+										className="shad">
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
+									</motion.div>
+								)}
 						<div
 							onClick={six}
 							style={{
@@ -520,48 +424,32 @@ const Folder_01 = () => {
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
-						{dots === 7 && (
-							<motion.div
-								initial={{ opacity: 0, scale: 0.9 }}
-								animate={{ opacity: 1, scale: 1 }}
-								exit={{ opacity: 0 }}
-								transition={{ duration: 0.5 }}
-								style={{
-									position: "absolute",
-									top: ".2rem",
-									right: "3rem",
-									width: "8rem",
-									height: "3rem",
-									display: "flex",
-									flexDirection: "column",
-									justifyContent: "center",
-									gap: ".5rem",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".3rem",
-								}}
-								className="shad">
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Edit
-								</h6>
-
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Delete
-								</h6>
-							</motion.div>
-						)}
+					{dots === 7 && (
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
+										style={{
+											position: "absolute",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".3rem",
+										}}
+										className="shad">
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
+									</motion.div>
+								)}
 						<div
 							onClick={seven}
 							style={{
@@ -588,48 +476,32 @@ const Folder_01 = () => {
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
-						{dots === 8 && (
-							<motion.div
-								initial={{ opacity: 0, scale: 0.9 }}
-								animate={{ opacity: 1, scale: 1 }}
-								exit={{ opacity: 0 }}
-								transition={{ duration: 0.5 }}
-								style={{
-									position: "absolute",
-									top: ".2rem",
-									right: "3rem",
-									width: "8rem",
-									height: "3rem",
-									display: "flex",
-									flexDirection: "column",
-									justifyContent: "center",
-									gap: ".5rem",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".3rem",
-								}}
-								className="shad">
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Edit
-								</h6>
-
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Delete
-								</h6>
-							</motion.div>
-						)}
+					{dots === 8 && (
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
+										style={{
+											position: "absolute",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".3rem",
+										}}
+										className="shad">
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
+									</motion.div>
+								)}
 						<div
 							onClick={eight}
 							style={{
@@ -656,48 +528,32 @@ const Folder_01 = () => {
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
-						{dots === 9 && (
-							<motion.div
-								initial={{ opacity: 0, scale: 0.9 }}
-								animate={{ opacity: 1, scale: 1 }}
-								exit={{ opacity: 0 }}
-								transition={{ duration: 0.5 }}
-								style={{
-									position: "absolute",
-									top: ".2rem",
-									right: "3rem",
-									width: "8rem",
-									height: "3rem",
-									display: "flex",
-									flexDirection: "column",
-									justifyContent: "center",
-									gap: ".5rem",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".3rem",
-								}}
-								className="shad">
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Edit
-								</h6>
-
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Delete
-								</h6>
-							</motion.div>
-						)}
+					{dots === 9 && (
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
+										style={{
+											position: "absolute",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".3rem",
+										}}
+										className="shad">
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
+									</motion.div>
+								)}
 						<div
 							onClick={nine}
 							style={{
@@ -724,48 +580,32 @@ const Folder_01 = () => {
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
-						{dots === 10 && (
-							<motion.div
-								initial={{ opacity: 0, scale: 0.9 }}
-								animate={{ opacity: 1, scale: 1 }}
-								exit={{ opacity: 0 }}
-								transition={{ duration: 0.5 }}
-								style={{
-									position: "absolute",
-									top: ".2rem",
-									right: "3rem",
-									width: "8rem",
-									height: "3rem",
-									display: "flex",
-									flexDirection: "column",
-									justifyContent: "center",
-									gap: ".5rem",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".3rem",
-								}}
-								className="shad">
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Edit
-								</h6>
-
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Delete
-								</h6>
-							</motion.div>
-						)}
+					{dots === 10 && (
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
+										style={{
+											position: "absolute",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".3rem",
+										}}
+										className="shad">
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
+									</motion.div>
+								)}
 						<div
 							onClick={ten}
 							style={{
@@ -792,48 +632,32 @@ const Folder_01 = () => {
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
-						{dots === 11 && (
-							<motion.div
-								initial={{ opacity: 0, scale: 0.9 }}
-								animate={{ opacity: 1, scale: 1 }}
-								exit={{ opacity: 0 }}
-								transition={{ duration: 0.5 }}
-								style={{
-									position: "absolute",
-									top: ".2rem",
-									right: "3rem",
-									width: "8rem",
-									height: "3rem",
-									display: "flex",
-									flexDirection: "column",
-									justifyContent: "center",
-									gap: ".5rem",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".3rem",
-								}}
-								className="shad">
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Edit
-								</h6>
-
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Delete
-								</h6>
-							</motion.div>
-						)}
+					{dots === 11 && (
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
+										style={{
+											position: "absolute",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".3rem",
+										}}
+										className="shad">
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
+									</motion.div>
+								)}
 						<div
 							onClick={eleven}
 							style={{
@@ -860,48 +684,32 @@ const Folder_01 = () => {
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
-						{dots === 12 && (
-							<motion.div
-								initial={{ opacity: 0, scale: 0.9 }}
-								animate={{ opacity: 1, scale: 1 }}
-								exit={{ opacity: 0 }}
-								transition={{ duration: 0.5 }}
-								style={{
-									position: "absolute",
-									top: ".2rem",
-									right: "3rem",
-									width: "8rem",
-									height: "3rem",
-									display: "flex",
-									flexDirection: "column",
-									justifyContent: "center",
-									gap: ".5rem",
-									alignItems: "center",
-									background: "white",
-									borderRadius: ".3rem",
-								}}
-								className="shad">
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Edit
-								</h6>
-
-								<h6
-									style={{
-										fontSize: "1rem",
-										background: "white",
-										fontWeight: "500",
-										color: "black",
-									}}>
-									Delete
-								</h6>
-							</motion.div>
-						)}
+					{dots === 12 && (
+									<motion.div
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0 }}
+										transition={{ duration: 0.5 }}
+										style={{
+											position: "absolute",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
+											display: "flex",
+											flexDirection: "column",
+											justifyContent: "center",
+											alignItems: "center",
+											background: "white",
+											borderRadius: ".3rem",
+										}}
+										className="shad">
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
+									</motion.div>
+								)}
 						<div
 							onClick={twelve}
 							style={{
@@ -933,4 +741,4 @@ const Folder_01 = () => {
 	);
 };
 
-export default Folder_01;
+export default Folder_06;

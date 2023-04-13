@@ -42,9 +42,7 @@ h1 {
 .block {
 	display: block;
 }
-.add {
-	cursor: pointer;
-}
+
 .hidden {
 	display: none;
 }
@@ -109,15 +107,16 @@ h1 {
 	opacity: 80;
 }
 .boxP {
-	gap: 4rem;
+	gap: 1.3rem;
 }
 .add {
-	margin-right: 3rem;
+	margin-right: 4rem;
 }
 .bg {
 	background: rgb(1, 175, 238);
 	color: white;
 }
+
 .x {
 	z-index: 1;
 }
@@ -143,34 +142,93 @@ input[type="number"] {
 	overflow: hidden;
 	display: inline-block;
 	background: none;
-	cursor: pointer;
 }
 .btn {
 	border: none;
-	background: none;
-	cursor: pointer;
+	background: $primary-color;
+	padding: 0.5rem 1.5rem;
+	border-radius: 0.6rem;
 	width: 100%;
-}
-.bnt {
 	cursor: pointer;
 }
 
+.bnt {
+	cursor: pointer;
+}
+.upload-btn-wrapper {
+	cursor: pointer;
+}
 .upload-btn-wrapper input[type="file"] {
-	font-size: 18px;
+	font-size: 20px;
 	position: absolute;
 	left: 0;
 	top: 0;
 	opacity: 0;
 }
 // ___________________________________________________________________________________________________________________________________
-.d{
+.d {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.shad{
-	box-shadow: 5px 8px 8px rgba($color: #00000085, $alpha: .5);
+.shad {
+	box-shadow: 5px 8px 8px rgba($color: #00000085, $alpha: 0.3);
+}
+
+.Delete {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: black;
+	border-radius: 0.5rem;
+}
+.menu {
+	top: 1rem;
+	right: 1.5rem;
+	z-index: 1;
+}
+.card {
+	z-index: 1;
+	position: absolute;
+	top: 3rem;
+	right: 3px;
+	width: 90%;
+	height: 200px;
+	border-radius: 1rem;
+	background: rgb(255, 255, 255);
+	box-shadow: 5px 5px 5px rgba($color: #00000085, $alpha: 0.3);
+}
+.folderP {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	width: 100%;
+	gap: 0.9rem;
+	box-sizing: border-box;
+	padding-top: 3rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.close {
+	background: none;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+.folderP div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 3rem;
+	background: skyblue;
+	border-radius: 0.5rem;
+	box-shadow: 2px 2px 5px rgba($color: #00000085, $alpha: 0.3);
+}
+.over {
+	z-index: 1;
+	background: #00000091;
 }
 /* Styles for screens wider than 768px */
 @media only screen and (min-width: 768px) {
@@ -183,10 +241,21 @@ input[type="number"] {
 		flex-direction: column;
 		padding: 2rem 1.8rem 0rem 1.8rem;
 	}
+	.menu {
+		top: 3rem;
+		right: 5rem;
+		z-index: 1;
+	}
 }
 
 /* Styles for screens wider than 1024px */
 @media only screen and (min-width: 1024px) {
+	.add {
+		margin-right: 0rem;
+	}
+	.menu {
+		display: none;
+	}
 	.boxP {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
@@ -207,16 +276,14 @@ input[type="number"] {
 	body {
 		padding: 0px;
 	}
-	.add {
-		margin-right: 0;
-	}
+
 	.sidebar {
 		width: 23%;
 		display: block;
 		padding-top: 2rem;
 	}
-	.d{
-		width: 86%;
+	.d {
+		width: 85%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -224,6 +291,9 @@ input[type="number"] {
 }
 /* Styles for screens wider than 1440px */
 @media only screen and (min-width: 1440px) {
+	.boxP {
+		gap: 2.5rem;
+	}
 	.page-side {
 		width: 80%;
 		display: flex;
@@ -247,6 +317,12 @@ input[type="number"] {
 		border-radius: 20px;
 		z-index: 1;
 		cursor: pointer;
+	}
+	.d {
+		width: 85%;
+	}
+	.menu {
+		right: 0.5rem;
 	}
 }
 
@@ -272,5 +348,8 @@ input[type="number"] {
 	}
 	.page-side {
 		width: 85%;
+	}
+	.d {
+		width: 90%;
 	}
 }

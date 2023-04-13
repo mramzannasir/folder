@@ -13,10 +13,21 @@ import Folder_06 from "./Folder_06";
 import Folder_04 from "./Folder_04";
 import Folder_03 from "./Folder_03";
 import { motion } from "framer-motion";
+import { BsTrash3Fill } from "react-icons/bs";
+import { CgMenuGridO } from "react-icons/cg";
+import { AiFillFolder } from "react-icons/ai";
+import {CgClose} from "react-icons/cg"
 
 const Home = () => {
 	const [dots, setDots] = useState<number>(0);
 	const [pages, setPages] = useState<number>(1);
+	const [fold, setFold] = useState<string>("1");
+	const handleFold = () => {
+		setFold("2");
+		if (fold === "2") {
+			setFold("1");
+		}
+	};
 	const first = () => {
 		setDots(1);
 		if (dots === 1) {
@@ -89,11 +100,85 @@ const Home = () => {
 			setDots(0);
 		}
 	};
+	const pageOne = ()=>{
+		setPages(1)
+		setFold("1")
+	}
+	const pageTwo = ()=>{
+		setPages(2)
+		setFold("1")
+	}
+	const pageThree = ()=>{
+		setPages(3)
+		setFold("1")
+	}
+	const pageFour = ()=>{
+		setPages(4)
+		setFold("1")
+	}
+	const pageFive = ()=>{
+		setPages(5)
+		setFold("1")
+	}
+	const pageSix = ()=>{
+		setPages(6)
+		setFold("1")
+	}
 	return (
 		<>
-			<div className="a">
-				<Navbar />
+			{fold === "2" && (
+				<div
+					style={{
+						width: "100%",
+						height: "100vh",
+						position: "absolute",
+						left: "0",
+						top: "0",
+					}}
+					className="over"></div>
+			)}
+			<div
+				onClick={handleFold}
+				style={{ position: "absolute", cursor: "pointer" }}
+				className="menu">
+				<CgMenuGridO size={30} />
 			</div>
+			{fold == "2" && (
+				<motion.div
+					initial={{ opacity: 0, scale: 0.9 }}
+					animate={{ opacity: 1, scale: 1 }}
+					exit={{ opacity: 0 }}
+					transition={{ duration: 0.5 }}
+					className={`card`}>
+					<div className="folderP">
+						<span onClick={(()=>setFold("1"))} className="close"> <CgClose size={26} color="red" / > </span>
+						<div onClick={pageOne}>
+							{" "}
+							<AiFillFolder size={30} /> Folder-1
+						</div>
+						<div onClick={pageTwo}>
+							{" "}
+							<AiFillFolder size={30} /> Folder-2
+						</div>
+						<div onClick={pageThree}>
+							{" "}
+							<AiFillFolder size={30} /> Folder-3
+						</div>
+						<div onClick={pageFour}>
+							{" "}
+							<AiFillFolder size={30} /> Folder-4
+						</div>
+						<div onClick={pageFive} >
+							{" "}
+							<AiFillFolder size={30} /> Folder-5
+						</div>
+						<div onClick={pageSix}>
+							{" "}
+							<AiFillFolder size={30} /> Folder-6
+						</div>
+					</div>
+				</motion.div>
+			)}
 			<div
 				style={{
 					width: "100%",
@@ -143,38 +228,22 @@ const Home = () => {
 										transition={{ duration: 0.5 }}
 										style={{
 											position: "absolute",
-											top: ".2rem",
-											right: "3rem",
-											width: "8rem",
-											height: "3rem",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
 											display: "flex",
 											flexDirection: "column",
 											justifyContent: "center",
-											gap: ".5rem",
 											alignItems: "center",
 											background: "white",
 											borderRadius: ".3rem",
 										}}
 										className="shad">
-										<h6
-											style={{
-												fontSize: "1rem",
-												background: "white",
-												fontWeight: "500",
-												color: "black",
-											}}>
-											Edit
-										</h6>
-
-										<h6
-											style={{
-												fontSize: "1rem",
-												background: "white",
-												fontWeight: "500",
-												color: "black",
-											}}>
-											Delete
-										</h6>
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
 									</motion.div>
 								)}
 								<div
@@ -220,38 +289,22 @@ const Home = () => {
 										transition={{ duration: 0.5 }}
 										style={{
 											position: "absolute",
-											top: ".2rem",
-											right: "3rem",
-											width: "8rem",
-											height: "3rem",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
 											display: "flex",
 											flexDirection: "column",
 											justifyContent: "center",
-											gap: ".5rem",
 											alignItems: "center",
 											background: "white",
 											borderRadius: ".3rem",
 										}}
 										className="shad">
-										<h6
-											style={{
-												fontSize: "1rem",
-												background: "white",
-												fontWeight: "500",
-												color: "black",
-											}}>
-											Edit
-										</h6>
-
-										<h6
-											style={{
-												fontSize: "1rem",
-												background: "white",
-												fontWeight: "500",
-												color: "black",
-											}}>
-											Delete
-										</h6>
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
 									</motion.div>
 								)}
 								<div
@@ -297,38 +350,22 @@ const Home = () => {
 										transition={{ duration: 0.5 }}
 										style={{
 											position: "absolute",
-											top: ".2rem",
-											right: "3rem",
-											width: "8rem",
-											height: "3rem",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
 											display: "flex",
 											flexDirection: "column",
 											justifyContent: "center",
-											gap: ".5rem",
 											alignItems: "center",
 											background: "white",
 											borderRadius: ".3rem",
 										}}
 										className="shad">
-										<h6
-											style={{
-												fontSize: "1rem",
-												background: "white",
-												fontWeight: "500",
-												color: "black",
-											}}>
-											Edit
-										</h6>
-
-										<h6
-											style={{
-												fontSize: "1rem",
-												background: "white",
-												fontWeight: "500",
-												color: "black",
-											}}>
-											Delete
-										</h6>
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
 									</motion.div>
 								)}
 								<div
@@ -374,38 +411,22 @@ const Home = () => {
 										transition={{ duration: 0.5 }}
 										style={{
 											position: "absolute",
-											top: ".2rem",
-											right: "3rem",
-											width: "8rem",
-											height: "3rem",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
 											display: "flex",
 											flexDirection: "column",
 											justifyContent: "center",
-											gap: ".5rem",
 											alignItems: "center",
 											background: "white",
 											borderRadius: ".3rem",
 										}}
 										className="shad">
-										<h6
-											style={{
-												fontSize: "1rem",
-												background: "white",
-												fontWeight: "500",
-												color: "black",
-											}}>
-											Edit
-										</h6>
-
-										<h6
-											style={{
-												fontSize: "1rem",
-												background: "white",
-												fontWeight: "500",
-												color: "black",
-											}}>
-											Delete
-										</h6>
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
 									</motion.div>
 								)}
 								<div
@@ -451,38 +472,22 @@ const Home = () => {
 										transition={{ duration: 0.5 }}
 										style={{
 											position: "absolute",
-											top: ".2rem",
-											right: "3rem",
-											width: "8rem",
-											height: "3rem",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
 											display: "flex",
 											flexDirection: "column",
 											justifyContent: "center",
-											gap: ".5rem",
 											alignItems: "center",
 											background: "white",
 											borderRadius: ".3rem",
 										}}
 										className="shad">
-										<h6
-											style={{
-												fontSize: "1rem",
-												background: "white",
-												fontWeight: "500",
-												color: "black",
-											}}>
-											Edit
-										</h6>
-
-										<h6
-											style={{
-												fontSize: "1rem",
-												background: "white",
-												fontWeight: "500",
-												color: "black",
-											}}>
-											Delete
-										</h6>
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
 									</motion.div>
 								)}
 								<div
@@ -528,38 +533,22 @@ const Home = () => {
 										transition={{ duration: 0.5 }}
 										style={{
 											position: "absolute",
-											top: ".2rem",
-											right: "3rem",
-											width: "8rem",
-											height: "3rem",
+											top: "2.9rem",
+											right: "1rem",
+											width: "6rem",
+											height: "2.5rem",
 											display: "flex",
 											flexDirection: "column",
 											justifyContent: "center",
-											gap: ".5rem",
 											alignItems: "center",
 											background: "white",
 											borderRadius: ".3rem",
 										}}
 										className="shad">
-										<h6
-											style={{
-												fontSize: "1rem",
-												background: "white",
-												fontWeight: "500",
-												color: "black",
-											}}>
-											Edit
-										</h6>
-
-										<h6
-											style={{
-												fontSize: "1rem",
-												background: "white",
-												fontWeight: "500",
-												color: "black",
-											}}>
-											Delete
-										</h6>
+										<div className="Delete">
+											<BsTrash3Fill />
+											<p>Delete</p>{" "}
+										</div>
 									</motion.div>
 								)}
 								<div
