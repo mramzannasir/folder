@@ -261,7 +261,7 @@ const Home = () => {
 										borderRadius: ".5rem",
 									}}
 									className="dot">
-									<BsThreeDots color="skyblue" size={30} />
+									<BsThreeDots color="#74d5ff" size={30} />
 								</div>
 								<div>
 									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
@@ -322,7 +322,7 @@ const Home = () => {
 										borderRadius: ".5rem",
 									}}
 									className="dot">
-									<BsThreeDots color="skyblue" size={30} />
+									<BsThreeDots color="#74d5ff" size={30} />
 								</div>
 								<div>
 									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
@@ -383,7 +383,7 @@ const Home = () => {
 										borderRadius: ".5rem",
 									}}
 									className="dot">
-									<BsThreeDots color="skyblue" size={30} />
+									<BsThreeDots color="#74d5ff" size={30} />
 								</div>
 								<div>
 									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
@@ -444,7 +444,7 @@ const Home = () => {
 										borderRadius: ".5rem",
 									}}
 									className="dot">
-									<BsThreeDots color="skyblue" size={30} />
+									<BsThreeDots color="#74d5ff" size={30} />
 								</div>
 								<div>
 									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
@@ -505,7 +505,7 @@ const Home = () => {
 										borderRadius: ".5rem",
 									}}
 									className="dot">
-									<BsThreeDots color="skyblue" size={30} />
+									<BsThreeDots color="#74d5ff" size={30} />
 								</div>
 								<div>
 									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
@@ -566,7 +566,7 @@ const Home = () => {
 										borderRadius: ".5rem",
 									}}
 									className="dot">
-									<BsThreeDots color="skyblue" size={30} />
+									<BsThreeDots color="#74d5ff" size={30} />
 								</div>
 								<div>
 									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
