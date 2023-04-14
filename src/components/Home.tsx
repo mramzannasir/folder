@@ -151,7 +151,7 @@ const Home = () => {
 					transition={{ duration: 0.5 }}
 					className={`card`}>
 					<div className="folderP">
-						<span onClick={(()=>setFold("1"))} className="close"> <CgClose size={26} color="red" / > </span>
+						<span onClick={(()=>setFold("1"))} className="close"> <CgClose size={26}  / > </span>
 						<div onClick={pageOne}>
 							{" "}
 							<AiFillFolder size={30} /> Folder-1
@@ -216,7 +216,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background: `${pages == 1 ? "rgb(1, 175, 238)" : "white"}`,
+									background: `${pages == 1 ? "#74d5ff" : "white"}`,
 									color: `${pages == 1 ? "white" : "black"}`,
 								}}
 								className="Sbox">
@@ -264,11 +264,11 @@ const Home = () => {
 									<BsThreeDots color="skyblue" size={30} />
 								</div>
 								<div>
-									<div>
+									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
 										<AiFillFolderOpen size={40} />
 									</div>
-									<div className="sHead">My Folder</div>
-									<div className="sDes">created on Jun 23, 2020</div>
+									<div style={{textAlign:"center", marginTop:".6rem" }} className="sHead">My Folder</div>
+									<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 								</div>
 							</div>
 							<div
@@ -277,7 +277,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background: `${pages == 2 ? "rgb(1, 175, 238)" : "white"}`,
+									background: `${pages == 2 ? "#74d5ff" : "white"}`,
 									color: `${pages == 2 ? "white" : "black"}`,
 								}}
 								className="Sbox">
@@ -325,11 +325,11 @@ const Home = () => {
 									<BsThreeDots color="skyblue" size={30} />
 								</div>
 								<div>
-									<div>
+									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
 										<AiFillFolderOpen size={40} />
 									</div>
-									<div className="sHead">Other Folder</div>
-									<div className="sDes">created on Jun 23, 2020</div>
+									<div style={{textAlign:"center", marginTop:".6rem" }} className="sHead">Other Folder</div>
+									<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 								</div>
 							</div>
 							<div
@@ -338,7 +338,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background: `${pages == 3 ? "rgb(1, 175, 238)" : "white"}`,
+									background: `${pages == 3 ? "#74d5ff" : "white"}`,
 									color: `${pages == 3 ? "white" : "black"}`,
 								}}
 								className="Sbox">
@@ -386,11 +386,11 @@ const Home = () => {
 									<BsThreeDots color="skyblue" size={30} />
 								</div>
 								<div>
-									<div>
+									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
 										<AiFillFolderOpen size={40} />
 									</div>
-									<div className="sHead">Other Folder</div>
-									<div className="sDes">created on Jun 23, 2020</div>
+									<div style={{textAlign:"center", marginTop:".6rem" }} className="sHead">Other Folder</div>
+									<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 								</div>
 							</div>
 							<div
@@ -399,7 +399,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background: `${pages == 4 ? "rgb(1, 175, 238)" : "white"}`,
+									background: `${pages == 4 ? "#74d5ff" : "white"}`,
 									color: `${pages == 4 ? "white" : "black"}`,
 								}}
 								className="Sbox">
@@ -447,11 +447,11 @@ const Home = () => {
 									<BsThreeDots color="skyblue" size={30} />
 								</div>
 								<div>
-									<div>
+									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
 										<AiFillFolderOpen size={40} />
 									</div>
-									<div className="sHead">Other Folder</div>
-									<div className="sDes">created on Jun 23, 2020</div>
+									<div style={{textAlign:"center", marginTop:".6rem" }} className="sHead">Other Folder</div>
+									<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 								</div>
 							</div>
 							<div
@@ -460,7 +460,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background: `${pages == 5 ? "rgb(1, 175, 238)" : "white"}`,
+									background: `${pages == 5 ? "#74d5ff" : "white"}`,
 									color: `${pages == 5 ? "white" : "black"}`,
 								}}
 								className="Sbox">
@@ -508,11 +508,11 @@ const Home = () => {
 									<BsThreeDots color="skyblue" size={30} />
 								</div>
 								<div>
-									<div>
+									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
 										<AiFillFolderOpen size={40} />
 									</div>
-									<div className="sHead">Other Folder</div>
-									<div className="sDes">created on Jun 23, 2020</div>
+									<div style={{textAlign:"center", marginTop:".6rem" }} className="sHead">Other Folder</div>
+									<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 								</div>
 							</div>
 							<div
@@ -521,7 +521,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background: `${pages == 6 ? "rgb(1, 175, 238)" : "white"}`,
+									background: `${pages == 6 ? "#74d5ff" : "white"}`,
 									color: `${pages == 6 ? "white" : "black"}`,
 								}}
 								className="Sbox">
@@ -569,11 +569,11 @@ const Home = () => {
 									<BsThreeDots color="skyblue" size={30} />
 								</div>
 								<div>
-									<div>
+									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
 										<AiFillFolderOpen size={40} />
 									</div>
-									<div className="sHead">Other Folder</div>
-									<div className="sDes">created on Jun 23, 2020</div>
+									<div style={{textAlign:"center", marginTop:".6rem" }} className="sHead">Other Folder</div>
+									<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 								</div>
 							</div>
 						</div>
@@ -589,7 +589,7 @@ const Home = () => {
 					{pages == 6 && <Folder_06 />}
 				</div>
 			</div>
-		</>
+		</> 
 	);
 };
 

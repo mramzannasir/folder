@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
-$primary-color: rgb(230, 247, 254);
+$primary-color: #e6f7fe;
 $secondary-color: rgb(1, 175, 238);
 * {
 	margin: 0;
@@ -28,10 +28,10 @@ body {
 	position: relative;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 3rem;
-
 	padding-left: 1rem;
-	box-shadow: 5px 5px 5px rgba($color: #0000001c, $alpha: 0.1);
+	box-shadow: 2px 2px 3px rgba($color: #0000001c, $alpha: 0.1);
 }
 h1 {
 	margin: 1rem 0rem;
@@ -113,7 +113,7 @@ h1 {
 	margin-right: 4rem;
 }
 .bg {
-	background: rgb(1, 175, 238);
+	background: #74d5ff;
 	color: white;
 }
 

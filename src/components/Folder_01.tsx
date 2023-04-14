@@ -165,11 +165,11 @@ const Folder_01 = () => {
 							<BsThreeDots color="skyblue" size={30} />
 						</div>
 						<div>
-							<div>
+							<div style={{width:"full", justifyContent:"center", display:"flex"}}>
 								<VscFilePdf size={40} color="#1c3238" />
 							</div>
-							<div className="Head">New.pdf</div>
-							<div className="sDes">created on Jun 23, 2020</div>
+							<div style={{textAlign:"center", marginTop:"1rem"}} className="Head">New.pdf</div>
+							<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
@@ -217,11 +217,11 @@ const Folder_01 = () => {
 							<BsThreeDots color="skyblue" size={30} />
 						</div>
 						<div>
-							<div>
+						<div style={{width:"full", justifyContent:"center", display:"flex"}}>
 								<VscFilePdf size={40} color="#1c3238" />
 							</div>
-							<div className="Head">New.pdf</div>
-							<div className="sDes">created on Jun 23, 2020</div>
+							<div style={{textAlign:"center", marginTop:"1rem"}} className="Head">New.pdf</div>
+							<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
@@ -269,11 +269,11 @@ const Folder_01 = () => {
 							<BsThreeDots color="skyblue" size={30} />
 						</div>
 						<div>
-							<div>
+						<div style={{width:"full", justifyContent:"center", display:"flex"}}>
 								<VscFilePdf size={40} color="#1c3238" />
 							</div>
-							<div className="Head">New.pdf</div>
-							<div className="sDes">created on Jun 23, 2020</div>
+							<div style={{textAlign:"center", marginTop:"1rem"}} className="Head">New.pdf</div>
+							<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
@@ -321,11 +321,11 @@ const Folder_01 = () => {
 							<BsThreeDots color="skyblue" size={30} />
 						</div>
 						<div>
-							<div>
+						<div style={{width:"full", justifyContent:"center", display:"flex"}}>
 								<VscFilePdf size={40} color="#1c3238" />
 							</div>
-							<div className="Head">New.pdf</div>
-							<div className="sDes">created on Jun 23, 2020</div>
+							<div style={{textAlign:"center", marginTop:"1rem"}} className="Head">New.pdf</div>
+							<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
@@ -373,11 +373,11 @@ const Folder_01 = () => {
 							<BsThreeDots color="skyblue" size={30} />
 						</div>
 						<div>
-							<div>
+						<div style={{width:"full", justifyContent:"center", display:"flex"}}>
 								<VscFilePdf size={40} color="#1c3238" />
 							</div>
-							<div className="Head">New.pdf</div>
-							<div className="sDes">created on Jun 23, 2020</div>
+							<div style={{textAlign:"center", marginTop:"1rem"}} className="Head">New.pdf</div>
+							<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
@@ -425,11 +425,11 @@ const Folder_01 = () => {
 							<BsThreeDots color="skyblue" size={30} />
 						</div>
 						<div>
-							<div>
+						<div style={{width:"full", justifyContent:"center", display:"flex"}}>
 								<VscFilePdf size={40} color="#1c3238" />
 							</div>
-							<div className="Head">New.pdf</div>
-							<div className="sDes">created on Jun 23, 2020</div>
+							<div style={{textAlign:"center", marginTop:"1rem"}} className="Head">New.pdf</div>
+							<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
@@ -477,11 +477,11 @@ const Folder_01 = () => {
 							<BsThreeDots color="skyblue" size={30} />
 						</div>
 						<div>
-							<div>
+						<div style={{width:"full", justifyContent:"center", display:"flex"}}>
 								<VscFilePdf size={40} color="#1c3238" />
 							</div>
-							<div className="Head">New.pdf</div>
-							<div className="sDes">created on Jun 23, 2020</div>
+							<div style={{textAlign:"center", marginTop:"1rem"}} className="Head">New.pdf</div>
+							<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
@@ -529,11 +529,11 @@ const Folder_01 = () => {
 							<BsThreeDots color="skyblue" size={30} />
 						</div>
 						<div>
-							<div>
+						<div style={{width:"full", justifyContent:"center", display:"flex"}}>
 								<VscFilePdf size={40} color="#1c3238" />
 							</div>
-							<div className="Head">New.pdf</div>
-							<div className="sDes">created on Jun 23, 2020</div>
+							<div style={{textAlign:"center", marginTop:"1rem"}} className="Head">New.pdf</div>
+							<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
@@ -581,11 +581,11 @@ const Folder_01 = () => {
 							<BsThreeDots color="skyblue" size={30} />
 						</div>
 						<div>
-							<div>
+						<div style={{width:"full", justifyContent:"center", display:"flex"}}>
 								<VscFilePdf size={40} color="#1c3238" />
 							</div>
-							<div className="Head">New.pdf</div>
-							<div className="sDes">created on Jun 23, 2020</div>
+							<div style={{textAlign:"center", marginTop:"1rem"}} className="Head">New.pdf</div>
+							<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
@@ -633,11 +633,11 @@ const Folder_01 = () => {
 							<BsThreeDots color="skyblue" size={30} />
 						</div>
 						<div>
-							<div>
+						<div style={{width:"full", justifyContent:"center", display:"flex"}}>
 								<VscFilePdf size={40} color="#1c3238" />
 							</div>
-							<div className="Head">New.pdf</div>
-							<div className="sDes">created on Jun 23, 2020</div>
+							<div style={{textAlign:"center", marginTop:"1rem"}} className="Head">New.pdf</div>
+							<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
@@ -685,11 +685,11 @@ const Folder_01 = () => {
 							<BsThreeDots color="skyblue" size={30} />
 						</div>
 						<div>
-							<div>
+						<div style={{width:"full", justifyContent:"center", display:"flex"}}>
 								<VscFilePdf size={40} color="#1c3238" />
 							</div>
-							<div className="Head">New.pdf</div>
-							<div className="sDes">created on Jun 23, 2020</div>
+							<div style={{textAlign:"center", marginTop:"1rem"}} className="Head">New.pdf</div>
+							<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 						</div>
 					</div>
 					<div style={{ position: "relative" }} className="box">
@@ -737,11 +737,11 @@ const Folder_01 = () => {
 							<BsThreeDots color="skyblue" size={30} />
 						</div>
 						<div>
-							<div>
+						<div style={{width:"full", justifyContent:"center", display:"flex"}}>
 								<VscFilePdf size={40} color="#1c3238" />
 							</div>
-							<div className="Head">New.pdf</div>
-							<div className="sDes">created on Jun 23, 2020</div>
+							<div style={{textAlign:"center", marginTop:"1rem"}} className="Head">New.pdf</div>
+							<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 						</div>
 					</div>
 				</motion.div>
