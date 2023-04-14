@@ -216,7 +216,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background: `${pages == 1 ? "#74d5ff" : "white"}`,
+									background: `${pages == 1 ? "#01afee" : "white"}`,
 									color: `${pages == 1 ? "white" : "black"}`,
 								}}
 								className="Sbox">
@@ -261,13 +261,13 @@ const Home = () => {
 										borderRadius: ".5rem",
 									}}
 									className="dot">
-									<BsThreeDots color="#74d5ff" size={30} />
+									<BsThreeDots color="#01afee" size={30} />
 								</div>
 								<div>
-									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
+									<div style={{width:"full",  display:"flex" }}>
 										<AiFillFolderOpen size={40} />
 									</div>
-									<div style={{textAlign:"center", marginTop:".6rem" }} className="sHead">My Folder</div>
+									<div style={{ marginTop:".6rem" }} className="sHead">My Folder</div>
 									<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 								</div>
 							</div>
@@ -277,7 +277,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background: `${pages == 2 ? "#74d5ff" : "white"}`,
+									background: `${pages == 2 ? "#01afee" : "white"}`,
 									color: `${pages == 2 ? "white" : "black"}`,
 								}}
 								className="Sbox">
@@ -322,13 +322,13 @@ const Home = () => {
 										borderRadius: ".5rem",
 									}}
 									className="dot">
-									<BsThreeDots color="#74d5ff" size={30} />
+									<BsThreeDots color="#01afee" size={30} />
 								</div>
 								<div>
-									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
+									<div style={{width:"full",  display:"flex" }}>
 										<AiFillFolderOpen size={40} />
 									</div>
-									<div style={{textAlign:"center", marginTop:".6rem" }} className="sHead">Other Folder</div>
+									<div style={{ marginTop:".6rem" }} className="sHead">Other Folder</div>
 									<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 								</div>
 							</div>
@@ -338,7 +338,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background: `${pages == 3 ? "#74d5ff" : "white"}`,
+									background: `${pages == 3 ? "#01afee" : "white"}`,
 									color: `${pages == 3 ? "white" : "black"}`,
 								}}
 								className="Sbox">
@@ -383,13 +383,13 @@ const Home = () => {
 										borderRadius: ".5rem",
 									}}
 									className="dot">
-									<BsThreeDots color="#74d5ff" size={30} />
+									<BsThreeDots color="#01afee" size={30} />
 								</div>
 								<div>
-									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
+									<div style={{width:"full",  display:"flex" }}>
 										<AiFillFolderOpen size={40} />
 									</div>
-									<div style={{textAlign:"center", marginTop:".6rem" }} className="sHead">Other Folder</div>
+									<div style={{ marginTop:".6rem" }} className="sHead">Other Folder</div>
 									<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 								</div>
 							</div>
@@ -399,7 +399,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background: `${pages == 4 ? "#74d5ff" : "white"}`,
+									background: `${pages == 4 ? "#01afee" : "white"}`,
 									color: `${pages == 4 ? "white" : "black"}`,
 								}}
 								className="Sbox">
@@ -444,13 +444,13 @@ const Home = () => {
 										borderRadius: ".5rem",
 									}}
 									className="dot">
-									<BsThreeDots color="#74d5ff" size={30} />
+									<BsThreeDots color="#01afee" size={30} />
 								</div>
 								<div>
-									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
+									<div style={{width:"full",  display:"flex" }}>
 										<AiFillFolderOpen size={40} />
 									</div>
-									<div style={{textAlign:"center", marginTop:".6rem" }} className="sHead">Other Folder</div>
+									<div style={{ marginTop:".6rem" }} className="sHead">Other Folder</div>
 									<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 								</div>
 							</div>
@@ -460,7 +460,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background: `${pages == 5 ? "#74d5ff" : "white"}`,
+									background: `${pages == 5 ? "#01afee" : "white"}`,
 									color: `${pages == 5 ? "white" : "black"}`,
 								}}
 								className="Sbox">
@@ -505,13 +505,13 @@ const Home = () => {
 										borderRadius: ".5rem",
 									}}
 									className="dot">
-									<BsThreeDots color="#74d5ff" size={30} />
+									<BsThreeDots color="#01afee" size={30} />
 								</div>
 								<div>
-									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
+									<div style={{width:"full",  display:"flex" }}>
 										<AiFillFolderOpen size={40} />
 									</div>
-									<div style={{textAlign:"center", marginTop:".6rem" }} className="sHead">Other Folder</div>
+									<div style={{ marginTop:".6rem" }} className="sHead">Other Folder</div>
 									<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 								</div>
 							</div>
@@ -521,7 +521,7 @@ const Home = () => {
 									position: "relative",
 									transition: "all .5s",
 									cursor: "pointer",
-									background: `${pages == 6 ? "#74d5ff" : "white"}`,
+									background: `${pages == 6 ? "#01afee" : "white"}`,
 									color: `${pages == 6 ? "white" : "black"}`,
 								}}
 								className="Sbox">
@@ -566,13 +566,13 @@ const Home = () => {
 										borderRadius: ".5rem",
 									}}
 									className="dot">
-									<BsThreeDots color="#74d5ff" size={30} />
+									<BsThreeDots color="#01afee" size={30} />
 								</div>
 								<div>
-									<div style={{width:"full", justifyContent:"center", display:"flex" }}>
+									<div style={{width:"full",  display:"flex" }}>
 										<AiFillFolderOpen size={40} />
 									</div>
-									<div style={{textAlign:"center", marginTop:".6rem" }} className="sHead">Other Folder</div>
+									<div style={{ marginTop:".6rem" }} className="sHead">Other Folder</div>
 									<div style={{textAlign:"center"}} className="sDes">created on Jun 23, 2020</div>
 								</div>
 							</div>
